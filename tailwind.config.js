@@ -4,10 +4,13 @@ module.exports = {
   theme: {
     extend: {
       maxWidth: {
-        theme: '1100px',
+        theme: '1200px',
       },
       fontFamily: {
-        theme: 'Inter',
+        theme: 'Avenir',
+      },
+      colors: {
+        'primary-purple': '#5814AE',
       },
     },
   },
