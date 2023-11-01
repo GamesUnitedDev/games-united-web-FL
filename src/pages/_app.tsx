@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import React from 'react';
 import type { AppProps } from 'next/app';
 import { appWithTranslation } from 'next-i18next';
@@ -11,45 +12,45 @@ import Loader from '@/components/layout/Loader';
 
 // * Local font implementation with @next/font/local - #1
 //
-// import localFont from '@next/font/local';
-//
-// const Inter = localFont({
-//   src: [
-//     {
-//       path: '../../public/assets/fonts/Inter-Thin.otf',
-//       weight: '100',
-//     },
-//    ...
-//   ],
-//   variable: '--font-inter',
-//   fallback: ['ui-sans-serif'],
-// });
+import localFont from '@next/font/local';
+
+const Avenir = localFont({
+  src: [
+    {
+      path: '../../public/assets/fonts/avenir/Avenir-Black.ttf',
+      weight: '900',
+    },
+    {
+      path: '../../public/assets/fonts/avenir/Avenir-Book.ttf',
+      weight: '400',
+    },
+    {
+      path: '../../public/assets/fonts/avenir/Avenir-Heavy.ttf',
+      weight: '800',
+    },
+    {
+      path: '../../public/assets/fonts/avenir/Avenir-Light.ttf',
+      weight: '300',
+    },
+    {
+      path: '../../public/assets/fonts/avenir/Avenir-Regular.ttf',
+      weight: 'normal',
+    },
+  ],
+  variable: '--font-avenir',
+  fallback: ['ui-sans-serif'],
+});
 
 function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      {/* 
-      //* Local font implementation with @next/font/local - #2
-      //? eslint-disable-next-line react/no-unknown-property 
-      //  <style jsx global> 
-      //  {`
-      //     :root {
-      //       --font-poppins: ${Inter.style.fontFamily};
-      //     }
-      //  `} 
-      //  </style>
-      //  <Script id="google-analytics" strategy="afterInteractive">
-      //     {`
-      //       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      //       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      //       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      //       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      //!      ga('create', 'YOUR-GA-CODE', 'auto');
-      //       ga('send', 'pageview');
-      //     `}
-      //  </Script> 
-      */}
-
+      <style jsx global>
+        {`
+          :root {
+            --font-unilever: ${Avenir.style.fontFamily};
+          }
+        `}
+      </style>
       <PopupWrapper>
         <Loader />
         <AlertPopup />

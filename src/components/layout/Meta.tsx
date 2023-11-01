@@ -41,7 +41,7 @@ function Meta({ title, description, favIconType }: MetaProps): JSX.Element {
 }
 
 Meta.defaultProps = {
-  favIconType: 'ico',
+  favIconType: 'png',
 };
 
 export default Meta;
