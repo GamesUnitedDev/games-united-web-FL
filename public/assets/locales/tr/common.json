@@ -3,6 +3,26 @@
     "about": "Hakkında",
     "games": "Oyunlar",
     "career": "Kariyer",
-    "contact": "İletişim"
+    "contact": "Iletisim"
+  },
+  "home": {
+    "entry": {
+      "title": "Oyunlar, Oyundan Daha Fazlasıdır!"
+    },
+    "description": {
+      "title": "Games United'a Hosgeldiniz.",
+      "description": "We are a Venture Builder which enables startup teams with capital, vision, and strategic direction. Unlike gaming VC’s, a venture builder deals with the day-to-day operations and strategic decisions to grow the new business."
+    }
+  },
+  "games": {
+    "mergepark": {
+      "gameblock": {
+        "title": "Merge Park",
+        "description": "Welcome to Merge Park! New suprises and fun things keep happening. Are you ready to discover the new story and meet new characters?"
+      }
+    },
+    "gameblock": {
+      "view-button": "Oyunu Incele"
+    }
   }
 }
