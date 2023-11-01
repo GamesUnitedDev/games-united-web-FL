@@ -110,7 +110,7 @@ export default function Navbar(): JSX.Element {
     if (menuStatus) {
       window.scrollTo({
         top: 0,
-        behavior: 'instant',
+        behavior: 'auto',
       });
       document.body.style.overflow = 'hidden';
     }
