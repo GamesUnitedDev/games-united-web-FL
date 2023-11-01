@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'next-i18next';
 
-import EntryGuy from '@/public/assets/img/entry-guy.png';
+import EntryGuy from '@/public/assets/img/entry-guy.webp';
 
 function Entry() {
   const { t } = useTranslation();

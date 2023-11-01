@@ -7,7 +7,7 @@ import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 
 import { NavbarLink, MobileMenuProps } from '@/types/boilerplate.types';
 
-import Logo from '@/public/assets/img/logo.png';
+import Logo from '@/public/assets/img/logo.webp';
 import LanguageSelector from './LanguageSelector';
 
 const HeaderLinks: NavbarLink[] = [

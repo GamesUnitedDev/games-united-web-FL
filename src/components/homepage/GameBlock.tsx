@@ -24,7 +24,7 @@ function GameBlock({
   const { t } = useTranslation();
   return (
     <section className="flex w-full items-center justify-center">
-      <section className="flex w-full max-w-theme flex-col items-start justify-start gap-6 py-10 px-0 lg:px-5 lg:py-20">
+      <section className="flex w-full max-w-xl flex-col items-start justify-start gap-6 py-10 px-0 lg:max-w-theme lg:px-5 lg:py-20">
         <h3 className="px-5 text-2xl font-black text-primary-purple lg:px-0 lg:text-5xl">
           {t(title)}
         </h3>

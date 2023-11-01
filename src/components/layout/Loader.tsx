@@ -2,7 +2,7 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import Wait from '@/common/utils/Wait.util';
 
-import Logo from '@/public/assets/img/logo.png';
+import Logo from '@/public/assets/img/logo.webp';
 
 function Loader(): JSX.Element | null {
   const Router = useRouter();

@@ -1,13 +1,16 @@
 import React from 'react';
 import Meta from '@/components/layout/Meta';
+import Team from '@/components/homepage/Team';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import Entry from '@/components/homepage/Entry';
 import GameBlock from '@/components/homepage/GameBlock';
+import Milestones from '@/components/homepage/Milestones';
 import Description from '@/components/homepage/Description';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-import MergeParkBanner from '@/public/assets/img/games/mergepark/home-banner.png';
+import MergeParkBanner from '@/public/assets/img/games/mergepark/home-banner.webp';
+import UniverseCSoon from '@/components/homepage/UniverseCSoon';
 
 export default function Home(): JSX.Element {
   return (
@@ -28,6 +31,9 @@ export default function Home(): JSX.Element {
             url: '/games/merge-park',
           }}
         />
+        <Team />
+        <Milestones />
+        <UniverseCSoon />
       </main>
       <Footer />
     </>
