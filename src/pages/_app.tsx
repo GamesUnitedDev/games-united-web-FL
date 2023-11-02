@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unknown-property */
+import AOS from 'aos';
 import React from 'react';
 import type { AppProps } from 'next/app';
 import { appWithTranslation } from 'next-i18next';
@@ -7,6 +8,7 @@ import AlertPopup from '@/components/popups/Alert.popup';
 import ConfirmPopup from '@/components/popups/Confirm.popup';
 
 // ? Global styles
+import 'aos/dist/aos.css';
 import '@/styles/globals.css';
 import Loader from '@/components/layout/Loader';
 
@@ -42,6 +44,13 @@ const Avenir = localFont({
 });
 
 function App({ Component, pageProps }: AppProps) {
+  React.useEffect(() => {
+    AOS.init({
+      once: true,
+      easing: 'ease-in-out',
+      anchorPlacement: 'top-center',
+    });
+  }, []);
   return (
     <>
       <style jsx global>

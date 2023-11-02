@@ -10,7 +10,11 @@ import {
 
 function Milestones() {
   return (
-    <section className="flex w-full items-center justify-center bg-white">
+    <section
+      data-aos="fade"
+      data-aos-duration="300"
+      className="flex w-full items-center justify-center overflow-hidden bg-white"
+    >
       <section className="flex w-full max-w-xl flex-col items-start justify-start gap-3 py-10 px-5 pb-16 lg:max-w-theme lg:pb-28">
         <h2 className="text-2xl font-black text-primary-purple lg:text-6xl">
           Milestones
@@ -19,7 +23,11 @@ function Milestones() {
           The key points of our adventure!
         </p>
         <ul className="m-0 mt-5 grid w-full list-none grid-cols-1 place-content-start place-items-stretch gap-14 p-0 text-center lg:grid-cols-3 lg:gap-0">
-          <li className="m-0 flex w-full flex-col items-center justify-start p-0">
+          <li
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="m-0 flex w-full flex-col items-center justify-start p-0"
+          >
             <h3 className="mb-5">
               <M2021 className="w-full max-w-[103px]" fill="#45015B" />
             </h3>
@@ -45,7 +53,11 @@ function Milestones() {
               </li>
             </ul>
           </li>
-          <li className="m-0 flex w-full flex-col items-center justify-start p-0">
+          <li
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="m-0 flex w-full flex-col items-center justify-start p-0"
+          >
             <h3 className="mb-5">
               <M2022 className="w-full max-w-[103px]" fill="#5814AE" />
             </h3>
@@ -75,7 +87,11 @@ function Milestones() {
               </li>
             </ul>
           </li>
-          <li className="m-0 flex w-full flex-col items-center justify-start p-0">
+          <li
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="m-0 flex w-full flex-col items-center justify-start p-0"
+          >
             <h3 className="mb-5">
               <M2023 className="w-full max-w-[103px]" fill="#8F47C6" />
             </h3>

@@ -7,7 +7,10 @@ function Footer(): JSX.Element {
     <footer className="flex w-full flex-col items-center justify-start gap-20 bg-[#430098] py-16 px-5 font-theme">
       <section className="flex w-full max-w-md flex-wrap items-start justify-center gap-12 lg:max-w-[1100px] lg:flex-nowrap lg:justify-between lg:gap-24">
         <section className="flex w-full flex-col items-center justify-start gap-5 lg:items-start">
-          <Link href="/" className="relative">
+          <Link
+            href="/"
+            className="relative transition-all duration-200 lg:hover:scale-110"
+          >
             <img
               alt="Logo"
               src={Logo.src}

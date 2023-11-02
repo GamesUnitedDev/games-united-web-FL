@@ -128,7 +128,10 @@ export default function Navbar(): JSX.Element {
     <header className="absolute left-0 top-0 z-[10] flex min-h-[152px] w-full items-start justify-center bg-transparent pt-5 font-theme lg:min-h-[214px]">
       <div className="absolute left-0 top-0 z-[-1] h-full w-full bg-gradient-to-b from-[#490E95] to-transparent" />
       <section className="relative flex w-full flex-wrap items-center justify-between gap-5 p-5">
-        <Link href="/" className="relative z-[50]">
+        <Link
+          href="/"
+          className="relative z-[50] transition-all duration-200 lg:hover:scale-110"
+        >
           <img
             alt="Logo"
             src={Logo.src}
