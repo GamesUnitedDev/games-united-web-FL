@@ -4,11 +4,10 @@ import { BsXLg } from 'react-icons/bs';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
-
+import LanguageSelector from '@/components/layout/LanguageSelector';
 import { NavbarLink, MobileMenuProps } from '@/types/boilerplate.types';
 
 import Logo from '@/public/assets/img/logo.webp';
-import LanguageSelector from './LanguageSelector';
 
 const HeaderLinks: NavbarLink[] = [
   {
@@ -19,7 +18,7 @@ const HeaderLinks: NavbarLink[] = [
   {
     id: 1,
     name: 'header.games',
-    url: '/games',
+    url: '/#games',
   },
   {
     id: 2,
@@ -46,7 +45,8 @@ function DesktopNavbarElement({
   const isCurrentRoute = React.useMemo(() => {
     if (
       url !== '/' &&
-      (Router.pathname === url || Router.pathname.includes(url))
+      (Router.pathname === url ||
+        Router.pathname.includes(url.replace('#', '')))
     )
       return true;
     return false;

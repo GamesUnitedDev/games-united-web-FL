@@ -54,3 +54,10 @@
   background-color: currentColor;
   border-radius: 50%;
 }
+
+.mergepark-ch-slider {
+}
+
+.mergepark-ch-slider .swiper-wrapper {
+  align-items: stretch !important;
+}
