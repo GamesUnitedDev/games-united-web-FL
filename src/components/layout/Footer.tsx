@@ -41,7 +41,7 @@ function Footer(): JSX.Element {
               </li>
               <li>
                 <Link className="hover:underline" href="/contact">
-                  Games
+                  Contact
                 </Link>
               </li>
             </ul>
