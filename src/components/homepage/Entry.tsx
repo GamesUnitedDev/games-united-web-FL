@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'next-i18next';
 
-import EntryGuy from '@/public/assets/img/entry-guy.webp';
+import EntryGuy from '@/public/assets/img/games/mergepark/characters/ch-mr-puddleton.webp';
 
 function Entry() {
   const { t } = useTranslation();
@@ -22,7 +22,7 @@ function Entry() {
         <path d="M-471 0H864V279.214L-471 642V0Z" fill="#5814AE" />
       </svg>
       <section className="z-[2] flex w-full max-w-xl flex-col px-5 lg:max-w-theme lg:flex-row lg:flex-nowrap lg:items-start lg:justify-between">
-        <h1 className="mt-[150px] w-fit max-w-[80%] border-b-[3px] pb-5 pr-1 text-left text-4xl font-black text-white md:max-w-[70%] md:text-5xl lg:mt-[200px] lg:text-8xl">
+        <h1 className="mt-[150px] w-fit max-w-[80%] border-b-[3px] pb-5 pr-1 text-left text-4xl font-black text-white md:max-w-[70%] md:text-5xl lg:mt-[200px] lg:text-[84px]">
           {t('home.entry.title')}
         </h1>
         <img
