@@ -55,7 +55,9 @@
   },
   "rules": {
     "@next/next/no-img-element": "off",
+    "react/no-array-index-key": "off",
     "react-hooks/exhaustive-deps": "off",
+    "react/require-default-props": "off",
     "react/jsx-props-no-spreading": "off",
     "import/no-extraneous-dependencies": "off"
   }
