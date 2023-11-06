@@ -35,7 +35,7 @@ function Footer(): JSX.Element {
                 </Link>
               </li>
               <li>
-                <Link className="hover:underline" href="/about">
+                <Link className="hover:underline" href="/">
                   About
                 </Link>
               </li>

@@ -28,7 +28,7 @@ const HeaderLinks: NavbarLink[] = [
   {
     id: 3,
     name: 'header.contact',
-    url: '/contaact',
+    url: '/contact',
   },
 ];
 
