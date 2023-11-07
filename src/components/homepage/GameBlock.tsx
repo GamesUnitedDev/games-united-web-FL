@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
+import GameDownloadButton from '../misc/GameDownloadButton';
 
 type Props = {
   game: {
@@ -9,6 +10,8 @@ type Props = {
     description: string;
     url?: string;
     urlText?: string;
+    appstoreUrl?: string;
+    googleplayUrl?: string;
   };
 };
 
@@ -19,6 +22,8 @@ function GameBlock({
     description,
     url,
     urlText = 'games.gameblock.view-button',
+    appstoreUrl,
+    googleplayUrl,
   },
 }: Props) {
   const { t } = useTranslation();
@@ -41,6 +46,24 @@ function GameBlock({
         <p className="px-5 text-sm font-normal text-black lg:mt-[36px] lg:px-0 lg:text-2xl">
           {t(description)}
         </p>
+        {(appstoreUrl || googleplayUrl) && (
+          <section className="mb-10 flex w-full flex-wrap items-center justify-start gap-2 px-5 lg:px-0">
+            {appstoreUrl && (
+              <GameDownloadButton
+                className="flex h-[46px] w-fit max-w-fit items-center justify-center "
+                type="appstore"
+                url={appstoreUrl as string}
+              />
+            )}
+            {googleplayUrl && (
+              <GameDownloadButton
+                className="flex h-[46px] w-fit max-w-fit items-center justify-center "
+                type="googleplay"
+                url={googleplayUrl as string}
+              />
+            )}
+          </section>
+        )}
         {url && (
           <Link
             className="mx-5 rounded-[37.5px] border border-black bg-white py-4 px-6 text-center text-sm font-black text-primary-purple transition-all duration-200 hover:bg-primary-purple/30 lg:mx-0 lg:py-6 lg:px-16 lg:text-xl"

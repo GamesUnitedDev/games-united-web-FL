@@ -31,6 +31,8 @@ export default function Home(): JSX.Element {
             image: MergeParkBanner.src,
             description: 'games.mergepark.gameblock.description',
             url: '/games/merge-park',
+            googleplayUrl: 'https://google.com',
+            appstoreUrl: 'https://google.com',
           }}
         />
         <Team />
