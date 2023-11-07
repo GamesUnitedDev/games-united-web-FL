@@ -1,16 +1,34 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import FormErrorLabel from '../misc/FormErrorLabel';
+import apiClient from '@/common/clients/api.client';
+import { usePopup } from '@/contexts/Popup.context';
+import FormErrorLabel from '@/components/misc/FormErrorLabel';
 
 function ContactForm() {
   const {
+    reset,
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const { activateAlertPopup } = usePopup();
+
+  const onSubmit = async (body: {
+    [key: string]: string | { [key: string]: string };
+  }) => {
+    activateAlertPopup('Sending your message...', 'loading');
+    const { data, error } = await apiClient.sendContactForm(body);
+
+    if (data && !error) {
+      reset();
+      return activateAlertPopup(
+        "Your message has been sent. We'll get back to you as soon as possible.",
+        'success'
+      );
+    }
+
+    return activateAlertPopup('Something went wrong.', 'error');
   };
 
   return (

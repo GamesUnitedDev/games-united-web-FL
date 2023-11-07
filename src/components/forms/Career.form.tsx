@@ -1,10 +1,14 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import FormErrorLabel from '../misc/FormErrorLabel';
-import { CloudUpload } from '../misc/Illustrations';
+import { usePopup } from '@/contexts/Popup.context';
+import FormErrorLabel from '@/components/misc/FormErrorLabel';
+import { CloudUpload } from '@/components/misc/Illustrations';
+import readFileAsBase64 from '@/common/utils/ReadAsBase64.util';
+import apiClient from '@/common/clients/api.client';
 
 function CareerForm() {
   const {
+    reset,
     watch,
     register,
     handleSubmit,
@@ -13,8 +17,37 @@ function CareerForm() {
 
   const Resume = watch('resume');
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const { activateAlertPopup } = usePopup();
+
+  const onSubmit = async (body: {
+    [key: string]: string | { [key: string]: string };
+  }) => {
+    activateAlertPopup('Sending your career application...', 'loading');
+    const resume = body.resume[0];
+    const base64file = await readFileAsBase64(resume);
+
+    const file = {
+      name: resume.name,
+      type: resume.type,
+      data: base64file,
+    };
+
+    const { data, error } = await apiClient.sendCareerForm({
+      name: body.name,
+      email: body.email,
+      phone: body.phone,
+      resume: file,
+    });
+
+    if (data && !error) {
+      reset();
+      return activateAlertPopup(
+        "Your application has been sent. We'll get back to you as soon as possible.",
+        'success'
+      );
+    }
+
+    return activateAlertPopup('Something went wrong.', 'error');
   };
 
   return (

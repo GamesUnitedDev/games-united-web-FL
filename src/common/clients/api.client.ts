@@ -13,16 +13,38 @@ class ApiClient implements IApiClient {
     this.defaultError = 'errors.default';
   }
 
-  public async getCountries() {
+  public async sendContactForm(body: {
+    [key: string]: string | { [key: string]: string };
+  }) {
     try {
-      const { data } = await this.API.get('/countries').catch((error) => {
+      const { data } = await this.API.post('/contact', body).catch((error) => {
         throw new ClientError(this.errorHandler(error));
       });
 
       return {
         data,
         error: null,
-      } as IClientResponse<{ name: string }[], null>;
+      } as IClientResponse<{ message: string }, null>;
+    } catch (error: any) {
+      return {
+        data: null,
+        error: error?.message || this.defaultError,
+      } as IClientResponse<null, string>;
+    }
+  }
+
+  public async sendCareerForm(body: {
+    [key: string]: string | { [key: string]: string };
+  }) {
+    try {
+      const { data } = await this.API.post('/career', body).catch((error) => {
+        throw new ClientError(this.errorHandler(error));
+      });
+
+      return {
+        data,
+        error: null,
+      } as IClientResponse<{ message: string }, null>;
     } catch (error: any) {
       return {
         data: null,
