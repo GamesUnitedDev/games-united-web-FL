@@ -61,3 +61,7 @@
 .mergepark-ch-slider .swiper-wrapper {
   align-items: stretch !important;
 }
+
+.custom-prose-vars {
+  --tw-prose-bullets: black;
+}

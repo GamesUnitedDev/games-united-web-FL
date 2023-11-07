@@ -14,8 +14,8 @@ function Career() {
   return (
     <>
       <Meta
-        title="Careers | Games United"
-        description="We are a Venture Builder which enables startup teams with capital, vision, and strategic direction. Unlike gaming VC’s, a venture builder deals with the day-to-day operations and strategic decisions to grow the new business."
+        title={t('career.meta.title')}
+        description={t('career.meta.description')}
       />
       <Navbar />
       <main className="flex min-h-screen flex-col items-center justify-start font-theme">

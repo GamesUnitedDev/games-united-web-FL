@@ -107,27 +107,9 @@ function Footer(): JSX.Element {
           </Link>
           <Link
             className="underline transition-all duration-150 hover:text-white"
-            href="/legal/terms-of-service"
-          >
-            {t('footer.legal.terms-of-service')}
-          </Link>
-          <Link
-            className="underline transition-all duration-150 hover:text-white"
-            href="/legal/code-of-conduct"
-          >
-            {t('footer.legal.code-of-conduct')}
-          </Link>
-          <Link
-            className="underline transition-all duration-150 hover:text-white"
             href="/legal/cookie-policy"
           >
             {t('footer.legal.cookie-policy')}
-          </Link>
-          <Link
-            className="underline transition-all duration-150 hover:text-white"
-            href="/legal/unsolicited-content-and-product-feedback-policy"
-          >
-            {t('footer.legal.unsolicited-content-and-product-feedback-policy')}
           </Link>
         </section>
       </section>

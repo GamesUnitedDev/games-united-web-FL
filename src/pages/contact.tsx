@@ -14,8 +14,8 @@ function Contact() {
   return (
     <>
       <Meta
-        title="Contact | Games United"
-        description="We are a Venture Builder which enables startup teams with capital, vision, and strategic direction. Unlike gaming VC’s, a venture builder deals with the day-to-day operations and strategic decisions to grow the new business."
+        title={t('contact.meta.title')}
+        description={t('contact.meta.description')}
       />
       <Navbar />
       <main className="flex min-h-screen flex-col items-center justify-start font-theme">

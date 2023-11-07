@@ -1,5 +1,6 @@
 import React from 'react';
 import Meta from '@/components/layout/Meta';
+import { useTranslation } from 'next-i18next';
 import Team from '@/components/homepage/Team';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
@@ -7,17 +8,18 @@ import Entry from '@/components/homepage/Entry';
 import GameBlock from '@/components/homepage/GameBlock';
 import Milestones from '@/components/homepage/Milestones';
 import Description from '@/components/homepage/Description';
+import UniverseCSoon from '@/components/homepage/UniverseCSoon';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import MergeParkBanner from '@/public/assets/img/games/mergepark/home-banner.webp';
-import UniverseCSoon from '@/components/homepage/UniverseCSoon';
 
 export default function Home(): JSX.Element {
+  const { t } = useTranslation();
   return (
     <>
       <Meta
-        title="Games United"
-        description="We are a Venture Builder which enables startup teams with capital, vision, and strategic direction. Unlike gaming VC’s, a venture builder deals with the day-to-day operations and strategic decisions to grow the new business."
+        title={t('home.meta.title')}
+        description={t('home.meta.description')}
       />
       <Navbar />
       <main className="flex min-h-screen flex-col items-center justify-start font-theme">
