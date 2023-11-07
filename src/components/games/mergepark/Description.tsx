@@ -17,6 +17,13 @@ function Description() {
             url="https://google.com"
           />
         </section>
+        <iframe
+          allowFullScreen
+          title="Merge Park"
+          className="aspect-video w-full"
+          src="https://www.youtube.com/embed/eRsrbTrbHvE?si=9m0UuiH9l8KDXUBd&autoplay=1&mute=1"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        />
         <p className="whitespace-pre-wrap text-center text-sm font-normal text-black lg:text-2xl">
           {`We know how exciting it is to do something new by combining! That's why we are \npreparing a huge universe full of adventures for you. \nLet’s Merge!`}
         </p>
