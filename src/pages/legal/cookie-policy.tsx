@@ -32,7 +32,7 @@ function CookiePolicy({ pdf }: Props) {
           </section>
         </section>
         <article
-          className="custom-prose-vars prose prose-sm prose-neutral w-full max-w-theme py-10 prose-ol:pl-10 prose-ul:pl-10 prose-li:pl-4"
+          className="custom-prose-vars prose prose-sm prose-neutral w-full max-w-theme p-5 py-10 prose-ol:pl-10 prose-ul:pl-10 prose-li:pl-4"
           style={{
             fontSize: '12pt',
           }}
