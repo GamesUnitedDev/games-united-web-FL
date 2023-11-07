@@ -1,16 +1,16 @@
 import React from 'react';
 
+import { Swiper as SwiperType } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { ChevronsLeft, ChevronsRight } from '@/components/misc/Illustrations';
 
 import 'swiper/css';
 
 import ChEmma from '@/public/assets/img/games/mergepark/characters/ch-emma.webp';
-import ChMrPuddleton from '@/public/assets/img/games/mergepark/characters/ch-mr-puddleton.webp';
-import ChJennifer from '@/public/assets/img/games/mergepark/characters/ch-jennifer.webp';
 import ChOlivia from '@/public/assets/img/games/mergepark/characters/ch-olivia.webp';
 import ChAnthony from '@/public/assets/img/games/mergepark/characters/ch-anthony.webp';
-import { Swiper as SwiperType } from 'swiper';
-import { ChevronsLeft, ChevronsRight } from '@/components/misc/Illustrations';
+import ChJennifer from '@/public/assets/img/games/mergepark/characters/ch-jennifer.webp';
+import ChMrPuddleton from '@/public/assets/img/games/mergepark/characters/ch-mr-puddleton.webp';
 
 function Characters() {
   const [slider, setSlider] = React.useState<SwiperType | null>(null);
