@@ -1,5 +1,6 @@
 import React from 'react';
 import Meta from '@/components/layout/Meta';
+import { useTranslation } from 'next-i18next';
 import Footer from '@/components/layout/Footer';
 import Navbar from '@/components/layout/Navbar';
 import ContactForm from '@/components/forms/Contact.form';
@@ -8,7 +9,8 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import BannerImage from '@/public/assets/img/banner-contact.webp';
 
-function Career() {
+function Contact() {
+  const { t } = useTranslation();
   return (
     <>
       <Meta
@@ -20,7 +22,7 @@ function Career() {
         <GlobalBanner
           withPurpleDot
           image={BannerImage.src}
-          title="Contact Us"
+          title={t('contact.title')}
         />
         <ContactForm />
       </main>
@@ -37,4 +39,4 @@ export async function getServerSideProps({ locale }) {
   };
 }
 
-export default Career;
+export default Contact;

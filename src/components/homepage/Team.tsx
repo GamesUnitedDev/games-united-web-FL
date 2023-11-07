@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'next-i18next';
 
 import TeamImg1 from '@/public/assets/img/team/team1.webp';
 import TeamImg2 from '@/public/assets/img/team/team2.webp';
@@ -8,6 +9,7 @@ import TeamImg5 from '@/public/assets/img/team/team5.webp';
 import TeamImg6 from '@/public/assets/img/team/team6.webp';
 
 function Team() {
+  const { t } = useTranslation();
   return (
     <section
       data-aos="fade"
@@ -16,10 +18,10 @@ function Team() {
     >
       <section className="flex w-full max-w-xl flex-col items-start justify-start gap-3 py-10 px-5 lg:max-w-theme lg:py-20">
         <h2 className="text-2xl font-black text-primary-purple lg:text-6xl">
-          Work with Games United
+          {t('home.team.title')}
         </h2>
         <p className="text-sm font-black text-black lg:text-2xl">
-          Work while having fun!
+          {t('home.team.description')}
         </p>
         <section className="mt-1 flex w-full flex-wrap items-stretch justify-between gap-[8px]">
           <img

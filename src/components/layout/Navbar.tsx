@@ -12,22 +12,22 @@ import Logo from '@/public/assets/img/logo.webp';
 const HeaderLinks: NavbarLink[] = [
   {
     id: 0,
-    name: 'header.about',
+    name: 'navbar.about',
     url: '/',
   },
   {
     id: 1,
-    name: 'header.games',
+    name: 'navbar.games',
     url: '/games/merge-park',
   },
   {
     id: 2,
-    name: 'header.career',
+    name: 'navbar.career',
     url: '/career',
   },
   {
     id: 3,
-    name: 'header.contact',
+    name: 'navbar.contact',
     url: '/contact',
   },
 ];

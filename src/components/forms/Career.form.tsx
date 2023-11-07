@@ -1,10 +1,11 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { useTranslation } from 'next-i18next';
+import apiClient from '@/common/clients/api.client';
 import { usePopup } from '@/contexts/Popup.context';
 import FormErrorLabel from '@/components/misc/FormErrorLabel';
 import { CloudUpload } from '@/components/misc/Illustrations';
 import readFileAsBase64 from '@/common/utils/ReadAsBase64.util';
-import apiClient from '@/common/clients/api.client';
 
 function CareerForm() {
   const {
@@ -15,6 +16,7 @@ function CareerForm() {
     formState: { errors },
   } = useForm();
 
+  const { t } = useTranslation();
   const Resume = watch('resume');
 
   const { activateAlertPopup } = usePopup();
@@ -22,7 +24,7 @@ function CareerForm() {
   const onSubmit = async (body: {
     [key: string]: string | { [key: string]: string };
   }) => {
-    activateAlertPopup('Sending your career application...', 'loading');
+    activateAlertPopup(t('popups.sending-career'), 'loading');
     const resume = body.resume[0];
     const base64file = await readFileAsBase64(resume);
 
@@ -41,13 +43,10 @@ function CareerForm() {
 
     if (data && !error) {
       reset();
-      return activateAlertPopup(
-        "Your application has been sent. We'll get back to you as soon as possible.",
-        'success'
-      );
+      return activateAlertPopup(t('popups.career-sent'), 'success');
     }
 
-    return activateAlertPopup('Something went wrong.', 'error');
+    return activateAlertPopup(t('popups.something-went-wrong'), 'error');
   };
 
   return (
@@ -55,10 +54,10 @@ function CareerForm() {
       <section className="grid w-full max-w-xl grid-cols-1 place-content-start place-items-start gap-10 px-5 py-20 lg:max-w-theme lg:grid-cols-2">
         <section className="flex w-full flex-col items-start justify-start gap-6 lg:max-w-[500px]">
           <h2 className=" text-left text-2xl font-black text-primary-purple lg:text-5xl">
-            Join our talented and passionate team.
+            {t('career.sub-title')}
           </h2>
           <p className="text-left text-sm font-black text-black lg:text-2xl">
-            Find your next opportunity with Games United
+            {t('career.description')}
           </p>
         </section>
         <form
@@ -70,7 +69,7 @@ function CareerForm() {
             className="flex w-full flex-col items-start justify-start gap-3"
           >
             <span className="text-left text-sm font-normal text-black lg:text-2xl">
-              Name
+              {t('forms.inputs.name')}
             </span>
             <input
               id="name"
@@ -79,7 +78,7 @@ function CareerForm() {
               {...register('name', {
                 required: {
                   value: true,
-                  message: 'This field is required',
+                  message: t('forms.errors.required'),
                 },
               })}
             />
@@ -90,7 +89,7 @@ function CareerForm() {
             className="flex w-full flex-col items-start justify-start gap-3"
           >
             <span className="text-left text-sm font-normal text-black lg:text-2xl">
-              E-mail
+              {t('forms.inputs.email')}
             </span>
             <input
               id="email"
@@ -99,12 +98,14 @@ function CareerForm() {
               {...register('email', {
                 required: {
                   value: true,
-                  message: 'This field is required',
+                  message: t('forms.errors.required'),
                 },
                 validate: (value) => {
                   const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
 
-                  return emailRegex.test(value) || 'Invalid email address';
+                  return (
+                    emailRegex.test(value) || t('forms.errors.invalid-email')
+                  );
                 },
               })}
             />
@@ -115,7 +116,7 @@ function CareerForm() {
             className="flex w-full flex-col items-start justify-start gap-3"
           >
             <span className="text-left text-sm font-normal text-black lg:text-2xl">
-              Phone
+              {t('forms.inputs.phone')}
             </span>
             <input
               id="phone"
@@ -124,12 +125,14 @@ function CareerForm() {
               {...register('phone', {
                 required: {
                   value: true,
-                  message: 'This field is required',
+                  message: t('forms.errors.required'),
                 },
                 validate: (value) => {
                   const phoneRegex = /^[\d\s+()]*$/;
 
-                  return phoneRegex.test(value) || 'Invalid phone number';
+                  return (
+                    phoneRegex.test(value) || t('forms.errors.invalid-phone')
+                  );
                 },
               })}
             />
@@ -140,7 +143,7 @@ function CareerForm() {
             className="flex w-full flex-col items-start justify-start gap-3"
           >
             <span className="text-left text-sm font-normal text-black lg:text-2xl">
-              Resume
+              {t('forms.inputs.resume')}
             </span>
             <section className="flex w-full flex-row flex-wrap items-center justify-between gap-5 rounded-xl bg-primary-purple p-5 lg:flex-nowrap">
               <section className="flex flex-row items-center justify-start gap-5">
@@ -157,7 +160,7 @@ function CareerForm() {
                 onClick={() => document.getElementById('resume')?.click()}
                 className="w-full rounded-2xl bg-[#300B60] px-14 py-3 text-center text-2xl font-normal text-white transition-all duration-150 hover:bg-purple-900 lg:w-auto"
               >
-                Browse File
+                {t('forms.browse-file')}
               </button>
             </section>
             <input
@@ -168,7 +171,7 @@ function CareerForm() {
               {...register('resume', {
                 required: {
                   value: true,
-                  message: 'This field is required',
+                  message: t('forms.errors.required'),
                 },
                 validate: (value) => {
                   const allowedExtensions = [
@@ -179,7 +182,7 @@ function CareerForm() {
 
                   return (
                     allowedExtensions.includes(value[0].type) ||
-                    'Invalid file type'
+                    t('forms.errors.invalid-file')
                   );
                 },
               })}
@@ -191,7 +194,7 @@ function CareerForm() {
               className=" mt-10 rounded-2xl bg-primary-purple px-14 py-3 text-center text-2xl font-bold text-white transition-all duration-150 hover:bg-purple-900"
               type="submit"
             >
-              Submit
+              {t('forms.submit')}
             </button>
           </section>
         </form>

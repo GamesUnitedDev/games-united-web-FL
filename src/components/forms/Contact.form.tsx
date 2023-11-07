@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { useTranslation } from 'next-i18next';
 import apiClient from '@/common/clients/api.client';
 import { usePopup } from '@/contexts/Popup.context';
 import FormErrorLabel from '@/components/misc/FormErrorLabel';
@@ -12,23 +13,21 @@ function ContactForm() {
     formState: { errors },
   } = useForm();
 
+  const { t } = useTranslation();
   const { activateAlertPopup } = usePopup();
 
   const onSubmit = async (body: {
     [key: string]: string | { [key: string]: string };
   }) => {
-    activateAlertPopup('Sending your message...', 'loading');
+    activateAlertPopup(t('popups.sending-message'), 'loading');
     const { data, error } = await apiClient.sendContactForm(body);
 
     if (data && !error) {
       reset();
-      return activateAlertPopup(
-        "Your message has been sent. We'll get back to you as soon as possible.",
-        'success'
-      );
+      return activateAlertPopup(t('popups.message-sent'), 'success');
     }
 
-    return activateAlertPopup('Something went wrong.', 'error');
+    return activateAlertPopup(t('popups.something-went-wrong'), 'error');
   };
 
   return (
@@ -36,11 +35,13 @@ function ContactForm() {
       <section className="grid w-full max-w-xl grid-cols-1 place-content-start place-items-start gap-10 px-5 py-20 lg:max-w-theme lg:grid-cols-2">
         <section className="flex w-full flex-col items-start justify-start gap-6 lg:max-w-[500px]">
           <h2 className=" text-left text-2xl font-black text-primary-purple lg:text-5xl">
-            We&apos;ll get back to you as soon as possible
+            {t('contact.sub-title')}
           </h2>
           <p className="text-left text-sm font-black text-black lg:text-2xl">
-            For any Inquiries and questions about us and our activities, please
-            contact us at info@gamesunited.co
+            {t('contact.description')}{' '}
+            <a className="hover:underline" href="mailto:info@gamesunited.co">
+              info@gamesunited.co
+            </a>
           </p>
         </section>
         <form
@@ -52,7 +53,7 @@ function ContactForm() {
             className="flex w-full flex-col items-start justify-start gap-3"
           >
             <span className="text-left text-sm font-normal text-black lg:text-2xl">
-              Name
+              {t('forms.inputs.name')}
             </span>
             <input
               id="name"
@@ -61,7 +62,7 @@ function ContactForm() {
               {...register('name', {
                 required: {
                   value: true,
-                  message: 'This field is required',
+                  message: t('forms.errors.required'),
                 },
               })}
             />
@@ -72,7 +73,7 @@ function ContactForm() {
             className="flex w-full flex-col items-start justify-start gap-3"
           >
             <span className="text-left text-sm font-normal text-black lg:text-2xl">
-              E-mail
+              {t('forms.inputs.email')}
             </span>
             <input
               id="email"
@@ -81,12 +82,14 @@ function ContactForm() {
               {...register('email', {
                 required: {
                   value: true,
-                  message: 'This field is required',
+                  message: t('forms.errors.required'),
                 },
                 validate: (value) => {
                   const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
 
-                  return emailRegex.test(value) || 'Invalid email address';
+                  return (
+                    emailRegex.test(value) || t('forms.errors.invalid-email')
+                  );
                 },
               })}
             />
@@ -97,7 +100,7 @@ function ContactForm() {
             className="flex w-full flex-col items-start justify-start gap-3"
           >
             <span className="text-left text-sm font-normal text-black lg:text-2xl">
-              Message
+              {t('forms.inputs.message')}
             </span>
             <textarea
               id="message"
@@ -105,11 +108,11 @@ function ContactForm() {
               {...register('message', {
                 required: {
                   value: true,
-                  message: 'This field is required',
+                  message: t('forms.errors.required'),
                 },
                 minLength: {
                   value: 10,
-                  message: 'This field must be at least 10 characters long',
+                  message: t('forms.errors.min-length-10'),
                 },
               })}
             />
@@ -121,7 +124,7 @@ function ContactForm() {
               className=" mt-10 rounded-2xl bg-primary-purple px-14 py-3 text-center text-2xl font-bold text-white transition-all duration-150 hover:bg-purple-900"
               type="submit"
             >
-              Submit
+              {t('forms.submit')}
             </button>
           </section>
         </form>

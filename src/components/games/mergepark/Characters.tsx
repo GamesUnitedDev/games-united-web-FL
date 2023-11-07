@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { useTranslation } from 'next-i18next';
 import { Swiper as SwiperType } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { ChevronsLeft, ChevronsRight } from '@/components/misc/Illustrations';
@@ -13,6 +13,7 @@ import ChJennifer from '@/public/assets/img/games/mergepark/characters/ch-jennif
 import ChMrPuddleton from '@/public/assets/img/games/mergepark/characters/ch-mr-puddleton.webp';
 
 function Characters() {
+  const { t } = useTranslation();
   const [slider, setSlider] = React.useState<SwiperType | null>(null);
   const [activeSindex, setActiveSindex] = React.useState(0);
 
@@ -43,7 +44,7 @@ function Characters() {
     <section className="m-0 flex w-full items-center justify-center p-0">
       <section className="flex w-full max-w-xl flex-col items-start justify-start gap-12 py-10 px-5 lg:max-w-theme lg:py-20">
         <h2 className="text-2xl font-black text-primary-purple lg:px-5 lg:text-5xl">
-          Meet New Friends...
+          {t('games.mergepark.main.characters.title')}
         </h2>
         <ul className="m-0 hidden w-full items-stretch justify-between gap-5 p-0 px-10 lg:flex lg:flex-nowrap">
           {characters.map((character, index) => (
@@ -120,9 +121,8 @@ function Characters() {
             <SwiperSlide />
           </Swiper>
         </section>
-        <p className="text-left text-sm text-black lg:px-5 lg:text-2xl">
-          Welcome to Merge Park! New suprises and fun things keep happening. Are
-          you ready to discover the new story and meet new characters?
+        <p className="whitespace-pre-wrap text-left text-sm text-black lg:px-5 lg:text-2xl">
+          {t('games.mergepark.main.characters.description')}
         </p>
       </section>
     </section>

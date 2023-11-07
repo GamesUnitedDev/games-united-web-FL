@@ -1,28 +1,168 @@
 {
-  "header": {
+  "navbar": {
     "about": "About",
     "games": "Games",
     "career": "Career",
     "contact": "Contact"
   },
+  "footer": {
+    "company": {
+      "title": "Company",
+      "games": "Games",
+      "about": "About",
+      "career": "Career",
+      "contact": "Contact"
+    },
+    "social-links": {
+      "title": "Social Links",
+      "instagram": "Instagram",
+      "youtube": "Youtube",
+      "linkedin": "Linkedin"
+    },
+    "legal": {
+      "rights-reserved": "© 2021 - 2023 Games United Corporation. All rights reserved.",
+      "privacy-notice": "Privacy Notice",
+      "terms-of-service": "Terms of Service",
+      "code-of-conduct": "Code of Conduct",
+      "cookie-policy": "Cookie Policy",
+      "unsolicited-content-and-product-feedback-policy": "Unsolicited Content and Product Feedback Policy"
+    },
+    "contact-text": "For any inquiries and questions about us and our activities, please contact us at"
+  },
   "home": {
     "entry": {
-      "title": "Gaming Is Beyond Game!"
+      "title": "Game Is\nBeyond Gaming!"
     },
     "description": {
       "title": "Welcome to Games United.",
-      "description": "We are a Venture Builder which enables startup teams with capital, vision, and strategic direction. Unlike gaming VC’s, a venture builder deals with the day-to-day operations and strategic decisions to grow the new business."
+      "description": "Games United is an independent Digital Entertainment Content Factory with a distinct focus on mobile gaming. Founded in 2021 by experienced entrepreneurs, Games United has achieved to receive investments from Investors (First startup funding of the year!) in 2023. We create fun & engaging casual mobile games bu seamlessly integrating art, coding, psychology, intellectual property and storytelling. Our motto is 'Game is Beyond Gaming!'"
+    },
+    "team": {
+      "title": "Work with Games United",
+      "description": "Work while having fun!"
+    },
+    "milestones": {
+      "title": "Milestones",
+      "description": "The key points of our adventure!",
+      "milestones": [
+        {
+          "elements": [
+            {
+              "title": "Feb - 2021",
+              "description": "Games United founded"
+            },
+            {
+              "title": "Q2 - 2021",
+              "description": "Gaming Studios established & Development begun"
+            },
+            {
+              "title": "Q3 - 2021",
+              "description": "Invested in data tools"
+            }
+          ]
+        },
+        {
+          "elements": [
+            {
+              "title": "Q2 - 2022",
+              "elements": [
+                "Casual Games Self Publishing",
+                "Blockchain & NFT LoB started"
+              ]
+            },
+            {
+              "title": "Q4 - 2022",
+              "elements": ["Series-A Funding", "Testing of 2 casual games"]
+            }
+          ]
+        },
+        {
+          "elements": [
+            {
+              "title": "Q1 - 2023",
+              "elements": [
+                "Reached 60 Million USD valuation",
+                "Launched Games United 2.0"
+              ]
+            },
+            {
+              "title": "Q2 - 2023",
+              "elements": ["Launched Gaming Boad"]
+            }
+          ]
+        }
+      ]
+    },
+    "universecsoon": {
+      "title": "Our Universe Is Future Of Gaming",
+      "description": "Studios working in a multidiciplinary structure produce games that are more innovative and connected to the Games United Universe!",
+      "button": "Coming Soon"
     }
   },
   "games": {
     "mergepark": {
+      "main": {
+        "description": "Merge for surprises, discover the story, meet new friends. Explore the adventurous \nMerge Park and design your amusement park. \nLet's merge!",
+        "discover": {
+          "title": "Discover New Areas and Complete Story!",
+          "description": "Merge new assets and travel undiscovered lands...",
+          "sub-description": "Discover new places, merge different items and meet amazing new objects. Merge to create and play with new rides in every area."
+        },
+        "characters": {
+          "title": "Meet New Friends...",
+          "description": "Encounter lively and unforgettable characters as you progress through the map. Each new friend you meet not only adds a unique and vibrant dimension to your adventure but also becomes a friend, guiding you to unexplored paths and helping you unlock new areas.\n\nTogether, embark on journeys that will become lifelong memories..."
+        },
+        "design": {
+          "title": "Design Your Park!",
+          "description": "Merge and transform objects to reveal new wonders. On Customization Design Island, add your unique touch, crafting a park that mirrors your style. Experience the joy of personalization and discovery within a world brimming with creative possibilities."
+        },
+        "download": {
+          "title": "Download Now!",
+          "description": "Merge new assets and travel undiscovered lands..."
+        }
+      },
       "gameblock": {
         "title": "Merge Park",
-        "description": "Welcome to Merge Park! New suprises and fun things keep happening. Are you ready to discover the new story and meet new characters?"
+        "description": "Welcome to Merge Park! Are you ready to revive the once-existing world's best amusement park? Help Emma and her friends and bring the amusement park back to life."
       }
     },
     "gameblock": {
       "view-button": "View Game"
     }
+  },
+  "career": {
+    "title": "Build With Us",
+    "sub-title": "Join our talented and passionate team.",
+    "description": "Find your next opportunity with Games United"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "sub-title": "We'll get back to you as soon as possible",
+    "description": "For any Inquiries and questions about us and our activities, please contact us at"
+  },
+  "forms": {
+    "inputs": {
+      "name": "Name",
+      "email": "E-mail",
+      "phone": "Phone",
+      "message": "Message",
+      "resume": "Resume"
+    },
+    "errors": {
+      "required": "This field is required.",
+      "invalid-email": "Please enter a valid email address.",
+      "invalid-phone": "Please enter a valid phone number.",
+      "invalid-file": "Please upload a valid file. ( .pdf, .doc, .docx )",
+      "min-length-10": "Please enter at least 10 characters."
+    },
+    "browse-file": "Browse File",
+    "submit": "Submit"
+  },
+  "popups": {
+    "sending-message": "Sending your message...",
+    "message-sent": "Your message has been sent. We'll get back to you as soon as possible.",
+    "sending-career": "Sending your career application...",
+    "career-sent": "Your career application has been sent. We'll get back to you as soon as possible.",
+    "something-went-wrong": "Something went wrong. Please try again later."
   }
 }

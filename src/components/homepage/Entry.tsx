@@ -27,9 +27,10 @@ function Entry() {
           data-aos-delay="500"
           data-aos="fade-right"
           data-aos-duration="500"
-          className="mt-[100px] w-fit max-w-[80%] border-b-[3px] pb-5 pr-1 text-left text-4xl font-black text-white md:max-w-[70%] md:text-5xl lg:mt-[200px] lg:text-[84px]"
+          className="relative mt-[100px] w-full whitespace-pre-wrap pb-5 text-left text-4xl font-black text-white md:max-w-[80%] md:text-5xl lg:mt-[200px] lg:max-w-[80%] lg:text-[84px]"
         >
           {t('home.entry.title')}
+          <span className="absolute left-0 -bottom-3 z-[1] h-0.5 w-[80%] bg-white md:w-[120%] lg:w-[120%]" />
         </h1>
         <img
           data-aos-anchor="top"
@@ -38,7 +39,7 @@ function Entry() {
           data-aos-duration="500"
           alt="Games United"
           src={EntryGuy.src}
-          className="mt-[-30px] w-full max-w-[212px] self-end object-contain object-center lg:ml-[-50px] lg:mt-[100px] lg:max-w-[476px]"
+          className="z-[2] mt-[-30px] w-full max-w-[212px] self-end object-contain object-center lg:ml-[-50px] lg:mt-[100px] lg:max-w-[476px]"
         />
       </section>
     </section>

@@ -1,7 +1,9 @@
-import GameDownloadButton from '@/components/misc/GameDownloadButton';
 import React from 'react';
+import { useTranslation } from 'next-i18next';
+import GameDownloadButton from '@/components/misc/GameDownloadButton';
 
 function Description() {
+  const { t } = useTranslation();
   return (
     <section className="m-0 flex w-full items-center justify-center p-0">
       <section className="flex w-full max-w-xl flex-col items-center justify-start gap-12 px-5 py-10 lg:max-w-theme">
@@ -25,7 +27,7 @@ function Description() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         />
         <p className="whitespace-pre-wrap text-center text-sm font-normal text-black lg:text-2xl">
-          {`We know how exciting it is to do something new by combining! That's why we are \npreparing a huge universe full of adventures for you. \nLet’s Merge!`}
+          {t('games.mergepark.main.description')}
         </p>
       </section>
     </section>
