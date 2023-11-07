@@ -45,7 +45,7 @@ function Characters() {
         <h2 className="text-2xl font-black text-primary-purple lg:px-5 lg:text-5xl">
           Meet New Friends...
         </h2>
-        <ul className="m-0 hidden w-full flex-wrap items-stretch justify-between gap-5 p-0 px-10 lg:flex">
+        <ul className="m-0 hidden w-full items-stretch justify-between gap-5 p-0 px-10 lg:flex lg:flex-nowrap">
           {characters.map((character, index) => (
             <li
               key={`merge-park-character-${index}`}

@@ -18,7 +18,7 @@ const HeaderLinks: NavbarLink[] = [
   {
     id: 1,
     name: 'header.games',
-    url: '/#games',
+    url: '/games/merge-park',
   },
   {
     id: 2,

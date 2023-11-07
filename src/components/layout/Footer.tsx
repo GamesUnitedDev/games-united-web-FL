@@ -30,7 +30,7 @@ function Footer(): JSX.Element {
             <h4 className="text-2xl font-semibold text-white">Company</h4>
             <ul className="m-0 flex list-none flex-col items-center justify-start gap-4 p-0 text-2xl font-normal text-white lg:items-start">
               <li>
-                <Link className="hover:underline" href="/#games">
+                <Link className="hover:underline" href="/games/merge-park">
                   Games
                 </Link>
               </li>
