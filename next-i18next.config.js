@@ -7,7 +7,7 @@ module.exports = {
     defaultLocale: 'en',
     locales: ['en', 'tr'],
     localeDetection: false,
-    localePath: path.resolve('./public/assets/locales'),
   },
+  localePath: path.resolve('./public/assets/locales'),
   reloadOnPrerender: true,
 };

@@ -3,11 +3,7 @@ import Meta from '@/components/layout/Meta';
 import { useTranslation } from 'next-i18next';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
-import ReactHtmlParser from 'react-html-parser';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-
-import PDFTR from '@/public/assets/legal/cookie-policy-en.html';
-import PDFEN from '@/public/assets/legal/cookie-policy-tr.html';
 
 type Props = {
   pdf: string;
@@ -15,7 +11,7 @@ type Props = {
 
 function CookiePolicy({ pdf }: Props) {
   const { t } = useTranslation();
-  const parcedPDF: JSX.Element[] = ReactHtmlParser(pdf);
+
   return (
     <>
       <Meta
@@ -31,13 +27,13 @@ function CookiePolicy({ pdf }: Props) {
             </h1>
           </section>
         </section>
-        <article
-          className="custom-prose-vars prose prose-sm prose-neutral w-full max-w-theme p-5 py-10 prose-ol:pl-10 prose-ul:pl-10 prose-li:pl-4"
-          style={{
-            fontSize: '12pt',
-          }}
-        >
-          {parcedPDF}
+        <article className="custom-prose-vars prose prose-sm prose-neutral w-full max-w-theme p-5 py-10 prose-ol:pl-10 prose-ul:pl-10 prose-li:pl-4">
+          <embed
+            src={pdf}
+            type="application/pdf"
+            width="100%"
+            className="h-full min-h-screen w-full bg-white"
+          />
         </article>
       </main>
       <Footer />
@@ -47,8 +43,8 @@ function CookiePolicy({ pdf }: Props) {
 
 export async function getServerSideProps({ locale }) {
   const pdfs = {
-    tr: PDFTR,
-    en: PDFEN,
+    tr: '/assets/legal/cookie-policy-tr.pdf',
+    en: '/assets/legal/cookie-policy-en.pdf',
   };
 
   return {
