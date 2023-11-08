@@ -12,11 +12,13 @@ function Description() {
             className="flex h-[45px] w-fit max-w-fit items-center justify-center lg:h-[76px]"
             type="appstore"
             url="https://google.com"
+            imgClassName="h-full object-contain object-center"
           />
           <GameDownloadButton
             className="flex h-[45px] w-fit max-w-fit items-center justify-center lg:h-[76px]"
             type="googleplay"
             url="https://google.com"
+            imgClassName="h-full object-contain object-center"
           />
         </section>
         <iframe

@@ -18,11 +18,13 @@ function Download() {
           </p>
           <section className="hidden w-full grid-cols-1 place-content-start place-items-start gap-5 lg:grid">
             <GameDownloadButton
+              imgClassName="w-full object-center object-contain"
               className="flex w-full max-w-[228px] items-center justify-center"
               type="appstore"
               url="https://google.com"
             />
             <GameDownloadButton
+              imgClassName="w-full object-center object-contain"
               className="flex w-full max-w-[228px] items-center justify-center"
               type="googleplay"
               url="https://google.com"
@@ -36,11 +38,13 @@ function Download() {
         />
         <section className="flex w-full flex-wrap items-center justify-center gap-5 lg:hidden">
           <GameDownloadButton
+            imgClassName="h-full object-center object-contain"
             className="flex h-[45px] max-w-fit items-center justify-center"
             type="appstore"
             url="https://google.com"
           />
           <GameDownloadButton
+            imgClassName="h-full object-center object-contain"
             className="flex h-[45px] max-w-fit items-center justify-center"
             type="googleplay"
             url="https://google.com"

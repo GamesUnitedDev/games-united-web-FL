@@ -50,6 +50,7 @@ function GameBlock({
           <section className="mb-10 flex w-full flex-wrap items-start justify-start gap-2 px-5 lg:px-0">
             {appstoreUrl && (
               <GameDownloadButton
+                imgClassName="h-full object-center object-contain"
                 className="flex h-[46px] w-fit max-w-fit items-center justify-center "
                 type="appstore"
                 url={appstoreUrl as string}
@@ -57,6 +58,7 @@ function GameBlock({
             )}
             {googleplayUrl && (
               <GameDownloadButton
+                imgClassName="h-full object-center object-contain"
                 className="flex h-[46px] w-fit max-w-fit items-center justify-center "
                 type="googleplay"
                 url={googleplayUrl as string}

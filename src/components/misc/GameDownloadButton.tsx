@@ -7,15 +7,21 @@ type Props = {
   type: 'googleplay' | 'appstore';
   url: string;
   className?: string;
+  imgClassName?: string;
 };
 
-function GameDownloadButton({ type, url, className = '' }: Props) {
+function GameDownloadButton({
+  type,
+  url,
+  className = '',
+  imgClassName = '',
+}: Props) {
   return (
     <a href={url} rel="noreferrer" target="_blank" className={className}>
       <img
         src={type === 'googleplay' ? GooglePlayImg.src : AppStoreImg.src}
         alt={type === 'googleplay' ? 'Google Play Badge' : 'App Store Badge'}
-        className="h-full w-full object-contain object-center"
+        className={imgClassName}
       />
     </a>
   );

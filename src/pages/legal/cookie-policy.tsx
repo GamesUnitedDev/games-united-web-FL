@@ -30,8 +30,9 @@ function CookiePolicy({ pdf }: Props) {
         <article className="custom-prose-vars prose prose-sm prose-neutral w-full max-w-theme p-5 py-10 prose-ol:pl-10 prose-ul:pl-10 prose-li:pl-4">
           <embed
             src={pdf}
-            type="application/pdf"
             width="100%"
+            height="100%"
+            type="application/pdf"
             className="h-full min-h-screen w-full bg-white"
           />
         </article>
