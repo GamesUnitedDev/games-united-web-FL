@@ -193,5 +193,31 @@
       },
       "title": "Cookie Policy"
     }
+  },
+  "cookie-popup": {
+    "description": "We use cookies in line with our privacy policy to provide you with a better service. For more information about cookies,",
+    "policy-link": "click here.",
+    "accept-button": "Got it!",
+    "manage-button": "Manage Cookies",
+    "manage-box": {
+      "title": "Manage Cookies",
+      "options": [
+        {
+          "title": "Strictly necessary",
+          "description": "These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms."
+        },
+        {
+          "title": "Performance",
+          "description": "These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site."
+        },
+        {
+          "title": "Targeting",
+          "description": "These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites."
+        }
+      ],
+      "accept-all-close": "Accept All & Close",
+      "decline-all-close": "Decline All & Close",
+      "save-close": "Save & Close"
+    }
   }
 }

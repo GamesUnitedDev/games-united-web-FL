@@ -2,19 +2,20 @@
 import AOS from 'aos';
 import React from 'react';
 import type { AppProps } from 'next/app';
+import localFont from '@next/font/local';
+import Loader from '@/components/layout/Loader';
 import { appWithTranslation } from 'next-i18next';
 import PopupWrapper from '@/contexts/Popup.context';
 import AlertPopup from '@/components/popups/Alert.popup';
+import CookiePopup from '@/components/popups/Cookie.popup';
 import ConfirmPopup from '@/components/popups/Confirm.popup';
 
 // ? Global styles
 import 'aos/dist/aos.css';
 import '@/styles/globals.css';
-import Loader from '@/components/layout/Loader';
 
 // * Local font implementation with @next/font/local - #1
 //
-import localFont from '@next/font/local';
 
 const Avenir = localFont({
   src: [
@@ -63,6 +64,7 @@ function App({ Component, pageProps }: AppProps) {
       <PopupWrapper>
         <Loader />
         <AlertPopup />
+        <CookiePopup />
         <ConfirmPopup />
         <Component {...pageProps} />
       </PopupWrapper>

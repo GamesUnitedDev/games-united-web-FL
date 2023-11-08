@@ -193,5 +193,31 @@
       },
       "title": "Cookie Policy"
     }
+  },
+  "cookie-popup": {
+    "description": "Size daha iyi bir hizmet sunabilmek için gizlilik politikamız doğrultusunda çerezler kullanıyoruz. Çerezleri hakkında daha fazla bilgi için,",
+    "policy-link": "tıklayın.",
+    "accept-button": "Anladım!",
+    "manage-button": "Çerez Ayarları",
+    "manage-box": {
+      "title": "Çerezleri Yönet",
+      "options": [
+        {
+          "title": "Kesinlikle gerekli",
+          "description": "Bu çerezler web sitesinin çalışması için gereklidir ve sistemlerimizde kapatılamaz. Genellikle yalnızca sizin tarafınızdan yapılan ve gizlilik tercihlerinizi ayarlama gibi hizmet talebi anlamına gelen eylemlere yanıt olarak ayarlanırlar, Giriş yapın veya formları doldurun."
+        },
+        {
+          "title": "Performans",
+          "description": "Bu çerezler sitemizin performansını ölçebilmemiz ve iyileştirebilmemiz için ziyaretleri ve trafik kaynaklarını saymamıza olanak tanır. Hangi sayfaların en çok ve en az popüler olduğunu bilmemize ve ziyaretçilerin sitede nasıl dolaştığını görmemize yardımcı olurlar."
+        },
+        {
+          "title": "Hedefleme",
+          "description": "Bu çerezler sitemiz aracılığıyla reklam ortaklarımız tarafından yerleştirilebilir. İlgi alanlarınızın profilini oluşturmak ve diğer sitelerde size alakalı reklamlar göstermek için bu şirketler tarafından kullanılabilir."
+        }
+      ],
+      "accept-all-close": "Tümünü Kabul Et ve Kapat",
+      "decline-all-close": "Tümünü Reddet ve Kapat",
+      "save-close": "Kaydet ve Kapat"
+    }
   }
 }
