@@ -6,6 +6,44 @@ import { usePopup } from '@/contexts/Popup.context';
 import FormErrorLabel from '@/components/misc/FormErrorLabel';
 import { CloudUpload } from '@/components/misc/Illustrations';
 import readFileAsBase64 from '@/common/utils/ReadAsBase64.util';
+import Link from 'next/link';
+
+function PrivacyPolicyText() {
+  const {
+    i18n: { language },
+  } = useTranslation();
+
+  if (language === 'en') {
+    return (
+      <p className="text-left text-2xl font-normal text-black">
+        I have read and accept the{' '}
+        <Link
+          href="/legal/privacy-notice"
+          target="_blank"
+          rel="noreferrer"
+          className="text-primary-purple underline"
+        >
+          Privacy Policy
+        </Link>
+        .
+      </p>
+    );
+  }
+
+  return (
+    <p className="text-left text-2xl font-normal text-black">
+      <Link
+        href="/tr/legal/privacy-notice"
+        target="_blank"
+        rel="noreferrer"
+        className="text-primary-purple underline"
+      >
+        Gizlilik Politikası
+      </Link>{' '}
+      &apos;nı okudum ve kabul ediyorum
+    </p>
+  );
+}
 
 function CareerForm() {
   const {
@@ -37,7 +75,6 @@ function CareerForm() {
     const { data, error } = await apiClient.sendCareerForm({
       name: body.name,
       email: body.email,
-      phone: body.phone,
       resume: file,
     });
 
@@ -112,33 +149,6 @@ function CareerForm() {
             <FormErrorLabel>{errors.email?.message}</FormErrorLabel>
           </label>
           <label
-            htmlFor="phone"
-            className="flex w-full flex-col items-start justify-start gap-3"
-          >
-            <span className="text-left text-sm font-normal text-black lg:text-2xl">
-              {t('forms.inputs.phone')}
-            </span>
-            <input
-              id="phone"
-              type="text"
-              className="min-h-[65px] w-full rounded-xl border border-primary-purple bg-[#F5F5F5] p-2 text-left text-base text-black !outline-none ring-2 ring-transparent transition-all duration-150 focus-within:ring-primary-purple"
-              {...register('phone', {
-                required: {
-                  value: true,
-                  message: t('forms.errors.required'),
-                },
-                validate: (value) => {
-                  const phoneRegex = /^[\d\s+()]*$/;
-
-                  return (
-                    phoneRegex.test(value) || t('forms.errors.invalid-phone')
-                  );
-                },
-              })}
-            />
-            <FormErrorLabel>{errors.phone?.message}</FormErrorLabel>
-          </label>
-          <label
             htmlFor="resume"
             className="flex w-full flex-col items-start justify-start gap-3"
           >
@@ -189,9 +199,29 @@ function CareerForm() {
             />
             <FormErrorLabel>{errors.resume?.message}</FormErrorLabel>
           </label>
+          <label
+            htmlFor="privacypolicy"
+            className="mt-5 flex w-full flex-col items-start justify-start gap-3"
+          >
+            <section className="flex w-full flex-row flex-nowrap items-start justify-start gap-2">
+              <input
+                id="privacypolicy"
+                type="checkbox"
+                className="form-checkbox -mt-0.5 h-8 w-8 cursor-pointer rounded-lg border-2 text-primary-purple transition-all duration-200"
+                {...register('privacypolicy', {
+                  required: {
+                    value: true,
+                    message: t('forms.errors.required'),
+                  },
+                })}
+              />
+              <PrivacyPolicyText />
+            </section>
+            <FormErrorLabel>{errors.privacypolicy?.message}</FormErrorLabel>
+          </label>
           <section className="flex w-full items-center justify-center">
             <button
-              className=" mt-10 rounded-2xl bg-primary-purple px-14 py-3 text-center text-2xl font-bold text-white transition-all duration-150 hover:bg-purple-900"
+              className="mt-10 rounded-2xl bg-primary-purple px-14 py-3 text-center text-2xl font-bold text-white transition-all duration-150 hover:bg-purple-900"
               type="submit"
             >
               {t('forms.submit')}

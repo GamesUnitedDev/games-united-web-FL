@@ -32,7 +32,7 @@ function Download() {
         <img
           alt="Merge Park"
           src={PhoneIlsDesktop.src}
-          className="w-full translate-x-1/3 object-contain object-center lg:-mr-0 lg:translate-x-0"
+          className="w-full object-contain object-center lg:max-w-[700px]"
         />
         <section className="flex w-full flex-wrap items-center justify-center gap-5 lg:hidden">
           <GameDownloadButton

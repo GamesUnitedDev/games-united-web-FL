@@ -36,7 +36,7 @@
     },
     "description": {
       "title": "Welcome to Games United.",
-      "description": "Games United is an independent Digital Entertainment Content Factory with a distinct focus on mobile gaming. Founded in 2021 by experienced entrepreneurs, Games United has achieved to receive investments from Investors (First startup funding of the year!) in 2023. We create fun & engaging casual mobile games bu seamlessly integrating art, coding, psychology, intellectual property and storytelling. Our motto is 'Game is Beyond Gaming!'"
+      "description": "Games United is an independent Digital Entertainment Content Factory with a distinct focus on mobile gaming. Founded in 2021 by experienced entrepreneurs, Games United has achieved to receive investments from Investors in January 2023. We create fun & engaging casual mobile games bu seamlessly integrating art, coding, psychology, intellectual property and storytelling. Our motto is 'Game is Beyond Gaming!'"
     },
     "team": {
       "title": "Work with Games United",
@@ -88,7 +88,7 @@
             },
             {
               "title": "Q2 - 2023",
-              "elements": ["Launched Gaming Boad"]
+              "elements": ["Launched Gaming Board", "Launched Merge Park"]
             }
           ]
         }
@@ -155,28 +155,29 @@
   },
   "forms": {
     "inputs": {
-      "name": "Name",
-      "email": "E-mail",
-      "phone": "Phone",
-      "message": "Message",
-      "resume": "Resume"
+      "name": "İsim",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "message": "Mesaj",
+      "resume": "CV/Özgeçmiş"
     },
     "errors": {
-      "required": "This field is required.",
-      "invalid-email": "Please enter a valid email address.",
-      "invalid-phone": "Please enter a valid phone number.",
-      "invalid-file": "Please upload a valid file. ( .pdf, .doc, .docx )",
-      "min-length-10": "Please enter at least 10 characters."
+      "required": "Bu alan zorunludur.",
+      "invalid-email": "Lütfen geçerli bir e-posta adresi girin.",
+      "invalid-phone": "Lütfen geçerli bir telefon numarası girin.",
+      "invalid-file": "Lütfen geçerli bir dosya seçin. ( .pdf, .doc, .docx )",
+      "min-length-10": "Lütfen en az 10 karakter girin."
     },
-    "browse-file": "Browse File",
-    "submit": "Submit"
+    "browse-file": "Dosya Seç",
+    "submit": "Gönder"
   },
   "popups": {
-    "sending-message": "Sending your message...",
-    "message-sent": "Your message has been sent. We'll get back to you as soon as possible.",
-    "sending-career": "Sending your career application...",
-    "career-sent": "Your career application has been sent. We'll get back to you as soon as possible.",
-    "something-went-wrong": "Something went wrong. Please try again later."
+    "okay": "Tamam",
+    "sending-message": "Mesajınız gönderiliyor...",
+    "message-sent": "Mesajınız gönderildi. En kısa sürede size geri döneceğiz.",
+    "sending-career": "Kariyer başvurunuz gönderiliyor...",
+    "career-sent": "Kariyer başvurunuz gönderildi. En kısa sürede size geri döneceğiz.",
+    "something-went-wrong": "Bir şeyler ters gitti. Lütfen daha sonra tekrar deneyin."
   },
   "legal": {
     "privacy-notice": {

@@ -1,8 +1,10 @@
 import React from 'react';
 import Icon from '@/components/misc/Icon';
+import { useTranslation } from 'next-i18next';
 import { usePopup } from '@/contexts/Popup.context';
 
 function AlertPopup(): JSX.Element | null {
+  const { t } = useTranslation();
   const { alertPopup, deactivateAlertPopup } = usePopup();
 
   const containerClass = alertPopup?.isActive
@@ -35,7 +37,7 @@ function AlertPopup(): JSX.Element | null {
           type="button"
           onClick={alertPopup.onConfirm || deactivateAlertPopup}
         >
-          Okay
+          {t('popups.okay')}
         </button>
       </div>
     </div>

@@ -1,9 +1,47 @@
 import React from 'react';
+import Link from 'next/link';
 import { useForm } from 'react-hook-form';
 import { useTranslation } from 'next-i18next';
 import apiClient from '@/common/clients/api.client';
 import { usePopup } from '@/contexts/Popup.context';
 import FormErrorLabel from '@/components/misc/FormErrorLabel';
+
+function PrivacyPolicyText() {
+  const {
+    i18n: { language },
+  } = useTranslation();
+
+  if (language === 'en') {
+    return (
+      <p className="text-left text-2xl font-normal text-black">
+        I have read and accept the{' '}
+        <Link
+          href="/legal/privacy-notice"
+          target="_blank"
+          rel="noreferrer"
+          className="text-primary-purple underline"
+        >
+          Privacy Policy
+        </Link>
+        .
+      </p>
+    );
+  }
+
+  return (
+    <p className="text-left text-2xl font-normal text-black">
+      <Link
+        href="/tr/legal/privacy-notice"
+        target="_blank"
+        rel="noreferrer"
+        className="text-primary-purple underline"
+      >
+        Gizlilik Politikası
+      </Link>{' '}
+      &apos;nı okudum ve kabul ediyorum
+    </p>
+  );
+}
 
 function ContactForm() {
   const {
@@ -118,7 +156,26 @@ function ContactForm() {
             />
             <FormErrorLabel>{errors.message?.message}</FormErrorLabel>
           </label>
-
+          <label
+            htmlFor="privacypolicy"
+            className="mt-5 flex w-full flex-col items-start justify-start gap-3"
+          >
+            <section className="flex w-full flex-row flex-nowrap items-start justify-start gap-2">
+              <input
+                id="privacypolicy"
+                type="checkbox"
+                className="form-checkbox -mt-0.5 h-8 w-8 cursor-pointer rounded-lg border-2 text-primary-purple transition-all duration-200"
+                {...register('privacypolicy', {
+                  required: {
+                    value: true,
+                    message: t('forms.errors.required'),
+                  },
+                })}
+              />
+              <PrivacyPolicyText />
+            </section>
+            <FormErrorLabel>{errors.privacypolicy?.message}</FormErrorLabel>
+          </label>
           <section className="flex w-full items-center justify-center">
             <button
               className=" mt-10 rounded-2xl bg-primary-purple px-14 py-3 text-center text-2xl font-bold text-white transition-all duration-150 hover:bg-purple-900"

@@ -47,7 +47,7 @@ function GameBlock({
           {t(description)}
         </p>
         {(appstoreUrl || googleplayUrl) && (
-          <section className="mb-10 flex w-full flex-wrap items-center justify-start gap-2 px-5 lg:px-0">
+          <section className="mb-10 flex w-full flex-wrap items-start justify-start gap-2 px-5 lg:px-0">
             {appstoreUrl && (
               <GameDownloadButton
                 className="flex h-[46px] w-fit max-w-fit items-center justify-center "

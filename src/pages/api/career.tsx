@@ -14,7 +14,7 @@ export default async function handler(
   const reqMethod = req.method;
   const reqBody = req.body;
 
-  const { name, email, phone, resume } = reqBody;
+  const { name, email, resume } = reqBody;
 
   if (reqMethod !== 'POST') {
     res.status(405).json({ message: 'Method not allowed' });
@@ -27,10 +27,11 @@ export default async function handler(
     to: mailTo,
     subject: `New career application from ${name}`,
     text: `
-        Name: ${name}
-        Email: ${email}
-        Phone: ${phone}
-        File: ${resume.name}
+
+Name    : ${name}
+Email   : ${email}
+Resume  : ${resume.name}
+
       `,
     replyTo: email,
     attachments: [

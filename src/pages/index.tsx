@@ -35,8 +35,8 @@ export default function Home(): JSX.Element {
             appstoreUrl: 'https://google.com',
           }}
         />
-        <Team />
         <Milestones />
+        <Team />
         <UniverseCSoon />
       </main>
       <Footer />

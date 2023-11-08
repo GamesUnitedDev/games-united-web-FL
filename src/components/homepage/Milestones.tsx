@@ -139,6 +139,9 @@ function Milestones() {
                 <p className="p-with-dot text-xl font-normal">
                   {t('home.milestones.milestones.2.elements.1.elements.0')}
                 </p>
+                <p className="p-with-dot text-xl font-normal">
+                  {t('home.milestones.milestones.2.elements.1.elements.1')}
+                </p>
               </li>
             </ul>
           </li>
