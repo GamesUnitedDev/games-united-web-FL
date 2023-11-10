@@ -13,7 +13,7 @@ function Description() {
         <h2 className="text-2xl font-black text-primary-purple lg:text-5xl">
           {t('home.description.title')}
         </h2>
-        <p className="text-sm font-black text-black lg:text-2xl">
+        <p className="text-sm font-normal text-black lg:text-2xl">
           {t('home.description.description')}
         </p>
       </section>

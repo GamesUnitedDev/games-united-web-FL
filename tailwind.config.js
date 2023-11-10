@@ -7,7 +7,7 @@ module.exports = {
         theme: '1200px',
       },
       fontFamily: {
-        theme: 'Avenir',
+        theme: 'var(--font-avenir)',
       },
       colors: {
         'primary-purple': '#5814AE',

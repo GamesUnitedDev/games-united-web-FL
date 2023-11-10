@@ -95,10 +95,10 @@ function Footer(): JSX.Element {
         </section>
       </section>
       <section className="flex w-full max-w-md flex-col items-center justify-center gap-5 lg:max-w-theme">
-        <p className="text-center text-xl font-normal text-[#23044A]">
+        <p className="text-center text-xl font-normal text-zinc-200">
           {t('footer.legal.rights-reserved')}
         </p>
-        <section className="flex w-full flex-wrap items-center justify-center gap-6 text-center text-xl text-[#23044A]">
+        <section className="flex w-full flex-wrap items-center justify-center gap-6 text-center text-xl text-zinc-200">
           <Link
             className="underline transition-all duration-150 hover:text-white"
             href="/legal/privacy-notice"

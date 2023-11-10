@@ -20,28 +20,28 @@ import '@/styles/globals.css';
 const Avenir = localFont({
   src: [
     {
-      path: '../../public/assets/fonts/avenir/Avenir-Black.ttf',
+      path: '/../../public/assets/fonts/avenir/Avenir-Black.ttf',
       weight: '900',
     },
     {
-      path: '../../public/assets/fonts/avenir/Avenir-Book.ttf',
+      path: '/../../public/assets/fonts/avenir/Avenir-Book.ttf',
       weight: '400',
     },
     {
-      path: '../../public/assets/fonts/avenir/Avenir-Heavy.ttf',
+      path: '/../../public/assets/fonts/avenir/Avenir-Heavy.ttf',
       weight: '800',
     },
     {
-      path: '../../public/assets/fonts/avenir/Avenir-Light.ttf',
+      path: '/../../public/assets/fonts/avenir/Avenir-Light.ttf',
       weight: '300',
     },
     {
-      path: '../../public/assets/fonts/avenir/Avenir-Regular.ttf',
+      path: '/../../public/assets/fonts/avenir/Avenir-Regular.ttf',
       weight: 'normal',
     },
   ],
   variable: '--font-avenir',
-  fallback: ['ui-sans-serif'],
+  fallback: ['Avenir', 'Helvetica', 'Arial', 'sans-serif'],
 });
 
 function App({ Component, pageProps }: AppProps) {
@@ -57,7 +57,7 @@ function App({ Component, pageProps }: AppProps) {
       <style jsx global>
         {`
           :root {
-            --font-unilever: ${Avenir.style.fontFamily};
+            --font-avenir: ${Avenir.style.fontFamily};
           }
         `}
       </style>

@@ -74,7 +74,7 @@ function ManageBox({
 
   return manageBoxSt.inHTML ? (
     <div
-      className={`fixed z-[9999] flex h-full w-full items-center justify-center bg-black/70 p-5 transition-all duration-300
+      className={`fixed z-[9999] flex h-full w-full items-center justify-center bg-black/70 p-5 font-theme transition-all duration-300
       ${manageBoxSt.isActive ? '!opacity-100' : '!opacity-0'}
           `}
     >
