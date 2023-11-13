@@ -13,7 +13,7 @@ function PrivacyPolicyText() {
 
   if (language === 'en') {
     return (
-      <p className="text-left text-2xl font-normal text-black">
+      <p className="text-left text-base font-normal text-black lg:text-2xl">
         I have read and accept the{' '}
         <Link
           href="/legal/privacy-notice"
@@ -29,7 +29,7 @@ function PrivacyPolicyText() {
   }
 
   return (
-    <p className="text-left text-2xl font-normal text-black">
+    <p className="text-left text-base font-normal text-black lg:text-2xl">
       <Link
         href="/tr/legal/privacy-notice"
         target="_blank"
@@ -90,7 +90,7 @@ function ContactForm() {
             htmlFor="name"
             className="flex w-full flex-col items-start justify-start gap-3"
           >
-            <span className="text-left text-sm font-normal text-black lg:text-2xl">
+            <span className="text-left text-base font-normal text-black lg:text-2xl">
               {t('forms.inputs.name')}
             </span>
             <input
@@ -110,7 +110,7 @@ function ContactForm() {
             htmlFor="email"
             className="flex w-full flex-col items-start justify-start gap-3"
           >
-            <span className="text-left text-sm font-normal text-black lg:text-2xl">
+            <span className="text-left text-base font-normal text-black lg:text-2xl">
               {t('forms.inputs.email')}
             </span>
             <input
@@ -137,7 +137,7 @@ function ContactForm() {
             htmlFor="message"
             className="flex w-full flex-col items-start justify-start gap-3"
           >
-            <span className="text-left text-sm font-normal text-black lg:text-2xl">
+            <span className="text-left text-base font-normal text-black lg:text-2xl">
               {t('forms.inputs.message')}
             </span>
             <textarea

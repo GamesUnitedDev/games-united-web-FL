@@ -1,15 +1,15 @@
 {
   "navbar": {
-    "about": "Hakkında",
+    "about": "Hakkımızda",
     "games": "Oyunlar",
     "career": "Kariyer",
     "contact": "İletişim"
   },
   "footer": {
     "company": {
-      "title": "Kuruluş",
+      "title": "Kurumsal",
       "games": "Oyunlar",
-      "about": "Hakkında",
+      "about": "Hakkımızda",
       "career": "Kariyer",
       "contact": "İletişim"
     },
@@ -32,19 +32,19 @@
       "description": "We are a Venture Builder which enables startup teams with capital, vision, and strategic direction. Unlike gaming VC’s, a venture builder deals with the day-to-day operations and strategic decisions to grow the new business.s"
     },
     "entry": {
-      "title": "Oyun\nOyunun Ötesinde!"
+      "title": "Oyun Oynamanın\nÖtesinde!"
     },
     "description": {
-      "title": "Welcome to Games United",
-      "description": "Games United is an independent Digital Entertainment Content Factory with a distinct focus on mobile gaming. Founded in 2021 by experienced entrepreneurs, Games United has achieved to receive investments from Investors in January 2023. We create fun & engaging casual mobile games bu seamlessly integrating art, coding, psychology, intellectual property and storytelling. Our motto is 'Game is Beyond Gaming!'"
+      "title": "Games United’a Hoşgeldin!",
+      "description": "Games United, mobil oyunlara odaklanan bağımsız bir “Dijital Eğlence İçerik Fabrikasıdır”. 2021 yılında deneyimli girişimciler tarafından kurulan Games United, Ocak 2023'te Yatırımcılardan yatırım almayı başarmıştır. Sanat, kodlama, psikoloji, fikri mülkiyet ve hikaye anlatımını sorunsuz bir şekilde entegre ederek eğlenceli ve ilgi çekici gündelik mobil oyunlar yaratıyoruz.Sloganımız 'Oyun, Oyunun Ötesinde!'"
     },
-  "team": {
-      "title": "Work with Games United",
-      "description": "Work while having fun!"
+    "team": {
+      "title": "Games Unite ile Çalışma",
+      "description": "Eğlenirken çalış!"
     },
     "milestones": {
       "title": "Milestones",
-      "description": "The key points of our adventure!",
+      "description": "Maceramızın kilit noktaları!",
       "milestones": [
         {
           "elements": [
@@ -95,9 +95,9 @@
       ]
     },
     "universecsoon": {
-      "title": "Our Universe Is Future Of Gaming",
-      "description": "Studios working in a multidiciplinary structure produce games that are more innovative and connected to the Games United Universe!",
-      "button": "Coming Soon"
+      "title": "Games United Evreni Geleceğin Oyunculuğu",
+      "description": "Çok disiplinli bir yapıda çalışan stüdyolar daha yenilikçi ve Games United Evrenine bağlı oyunlar üretiyor!",
+      "button": "Çok Yakında!"
     }
   },
   "games": {
@@ -107,32 +107,32 @@
           "title": "Merge Park | Games United",
           "description": "We are a Venture Builder which enables startup teams with capital, vision, and strategic direction. Unlike gaming VC’s, a venture builder deals with the day-to-day operations and strategic decisions to grow the new business.s"
         },
-        "description": "Merge for surprises, discover the story, meet new friends. Explore the adventurous \nMerge Park and design your amusement park. \nLet's merge!",
+        "description": "Sürprizler için parçaları birleştirip hikayeyi keşfedin ve yeni arkadaşlarla tanışın. Macera\ndolu Merge Park'ı keşfedin ve eğlence parkınızı tasarlayın.\nHadi hemen katıl!",
         "discover": {
-          "title": "Discover New Areas and Complete Story!",
-          "description": "Merge new assets and travel undiscovered lands...",
-          "sub-description": "Discover new places, merge different items and meet amazing new objects. Merge to create and play with new rides in every area."
+          "title": "Yeni Alanları Keşfedin ve Hikayeyi Tamamlayın!",
+          "description": "Yeni içerikleri birleştirin ve keşfedilmemiş topraklara seyahat edin...",
+          "sub-description": "Yeni yerler keşfedin, farklı öğeleri birleştirin ve şaşırtıcı yeni nesnelerle tanışın. Her alanda yeni eğlenceler oluşturmak ve oynamak için birleştirin."
         },
         "characters": {
-          "title": "Meet New Friends...",
-          "description": "Encounter lively and unforgettable characters as you progress through the map. Each new friend you meet not only adds a unique and vibrant dimension to your adventure but also becomes a friend, guiding you to unexplored paths and helping you unlock new areas.\n\nTogether, embark on journeys that will become lifelong memories..."
+          "title": "Yeni Arkadaşların ile Tanış",
+          "description": "Haritada ilerlerken canlı ve unutulmaz karakterlerle karşılaşın. Tanıştığınız her yeni arkadaş maceranıza benzersiz ve canlı bir boyut katmakla kalmıyor, aynı zamanda sizi keşfedilmemiş yollara yönlendiren ve yeni alanların kilidini açmanıza yardımcı olan bir arkadaşa dönüşüyor.\n\nBirlikte, ömür boyu sürecek anılara dönüşecek yolculuklara çıkın..."
         },
         "design": {
-          "title": "Design Your Park!",
-          "description": "Merge and transform objects to reveal new wonders. On Customization Design Island, add your unique touch, crafting a park that mirrors your style. Experience the joy of personalization and discovery within a world brimming with creative possibilities."
+          "title": "Kendi Parkını Tasarla!",
+          "description": "Yeni harikalar ortaya çıkarmak için nesneleri birleştirin ve dönüştürün. Özelleştirme Tasarım Adası'nda, tarzınızı yansıtan bir park oluşturarak benzersiz dokunuşunuzu ekleyin. Yaratıcı olasılıklarla dolu bir dünyada kişiselleştirmenin ve keşfetmenin keyfini yaşayın."
         },
         "download": {
-          "title": "Download Now!",
-          "description": "Merge new assets and travel undiscovered lands..."
+          "title": "Hemen İndir!",
+          "description": "Yeni içerikleri birleştirin ve keşfedilmemiş topraklara seyahat edin..."
         }
       },
       "gameblock": {
         "title": "Merge Park",
-        "description": "Welcome to Merge Park! Are you ready to revive the once-existing world's best amusement park? Help Emma and her friends and bring the amusement park back to life."
+        "description": "Merge Park'a hoş geldiniz! Bir zamanlar var olan dünyanın en iyi eğlence parkını yeniden canlandırmaya hazır mısınız? Emma ve arkadaşlarına yardım edin ve eğlence parkını hayata döndürün."
       }
     },
     "gameblock": {
-      "view-button": "View Game"
+      "view-button": "İncele"
     }
   },
   "career": {
@@ -140,17 +140,17 @@
       "title": "Career | Games United",
       "description": "We are a Venture Builder which enables startup teams with capital, vision, and strategic direction. Unlike gaming VC’s, a venture builder deals with the day-to-day operations and strategic decisions to grow the new business.s"
     },
-    "title": "Build With Us",
-    "sub-title": "Join our talented and passionate team.",
-    "description": "Find your next opportunity with Games United"
+    "title": "Bizimle Çalış",
+    "sub-title": "Yetenekli ekibimize katılın!",
+    "description": "Games United ile sonraki fırsatınızı bulun..."
   },
   "contact": {
     "meta": {
       "title": "Contact | Games United",
       "description": "We are a Venture Builder which enables startup teams with capital, vision, and strategic direction. Unlike gaming VC’s, a venture builder deals with the day-to-day operations and strategic decisions to grow the new business.s"
     },
-    "title": "Contact Us",
-    "sub-title": "We'll get back to you as soon as possible",
+    "title": "Bize Ulaşın",
+    "sub-title": "Size en yakın sürede geri döneceğiz.",
     "description": "Bizimle ve faaliyetlerimizle ilgili her türlü soru ve sorunuz için lütfen bizimle şuradan iletişime geçin"
   },
   "forms": {
@@ -159,7 +159,7 @@
       "email": "E-posta",
       "phone": "Telefon",
       "message": "Mesaj",
-      "resume": "CV/Özgeçmiş"
+      "resume": "Portfolyo"
     },
     "errors": {
       "required": "Bu alan zorunludur.",
