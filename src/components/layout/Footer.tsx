@@ -44,6 +44,11 @@ function Footer(): JSX.Element {
                 </Link>
               </li>
               <li>
+                <Link className="hover:underline" href="/multiverse">
+                  {t('footer.company.multiverse')}
+                </Link>
+              </li>
+              <li>
                 <Link className="hover:underline" href="/contact">
                   {t('footer.company.contact')}
                 </Link>
@@ -65,7 +70,7 @@ function Footer(): JSX.Element {
                   target="_blank"
                   rel="noreferrer"
                   className="hover:underline"
-                  href="https://instagram.com"
+                  href="https://instagram.com/gamesunitedhq?igshid=MWdkMWlvcGhucWF5cA=="
                 >
                   {t('footer.social-links.instagram')}
                 </Link>
@@ -75,7 +80,7 @@ function Footer(): JSX.Element {
                   target="_blank"
                   rel="noreferrer"
                   className="hover:underline"
-                  href="https://youtube.com"
+                  href="https://www.youtube.com/channel/UCtljjRAxdTuo1EApYHE0LBQ"
                 >
                   {t('footer.social-links.youtube')}
                 </Link>
@@ -85,7 +90,7 @@ function Footer(): JSX.Element {
                   target="_blank"
                   rel="noreferrer"
                   className="hover:underline"
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/company/gamesunitedhq/mycompany/"
                 >
                   {t('footer.social-links.linkedin')}
                 </Link>

@@ -21,13 +21,13 @@ function Download() {
               imgClassName="w-full object-center object-contain"
               className="flex w-full max-w-[228px] items-center justify-center"
               type="appstore"
-              url="https://google.com"
+              url="https://apps.apple.com/tr/app/merge-park/id6448870187?l=tr"
             />
             <GameDownloadButton
               imgClassName="w-full object-center object-contain"
               className="flex w-full max-w-[228px] items-center justify-center"
               type="googleplay"
-              url="https://google.com"
+              url="https://play.google.com/store/apps/details?id=com.GamesUnited.Mergedpark&pcampaignid=web_share"
             />
           </section>
         </section>
@@ -38,16 +38,16 @@ function Download() {
         />
         <section className="flex w-full flex-wrap items-center justify-center gap-5 lg:hidden">
           <GameDownloadButton
+            type="appstore"
             imgClassName="h-full object-center object-contain"
             className="flex h-[45px] max-w-fit items-center justify-center"
-            type="appstore"
-            url="https://google.com"
+            url="https://apps.apple.com/tr/app/merge-park/id6448870187?l=tr"
           />
           <GameDownloadButton
+            type="googleplay"
             imgClassName="h-full object-center object-contain"
             className="flex h-[45px] max-w-fit items-center justify-center"
-            type="googleplay"
-            url="https://google.com"
+            url="https://play.google.com/store/apps/details?id=com.GamesUnited.Mergedpark&pcampaignid=web_share"
           />
         </section>
       </section>

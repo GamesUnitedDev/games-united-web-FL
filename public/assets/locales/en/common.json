@@ -2,6 +2,7 @@
   "navbar": {
     "about": "About",
     "games": "Games",
+    "multiverse": "Multiverse",
     "career": "Career",
     "contact": "Contact"
   },
@@ -9,6 +10,7 @@
     "company": {
       "title": "Company",
       "games": "Games",
+      "multiverse": "Multiverse",
       "about": "About",
       "career": "Career",
       "contact": "Contact"
@@ -66,14 +68,11 @@
           "elements": [
             {
               "title": "Q2 - 2022",
-              "elements": [
-                "Casual Games Self Publishing",
-                "Blockchain & NFT LoB started"
-              ]
+              "elements": ["Casual Games Self Publishing"]
             },
             {
               "title": "Q4 - 2022",
-              "elements": ["Series-A Funding", "Testing of 2 casual games"]
+              "elements": ["First Funding Round", "Testing of 2 casual games"]
             }
           ]
         },
@@ -89,6 +88,10 @@
             {
               "title": "Q2 - 2023",
               "elements": ["Launched Gaming Board", "Launched Merge Park"]
+            },
+            {
+              "title": "Q3 - 2023",
+              "elements": ["Layer AI & Turbine Games Strategic Alliance"]
             }
           ]
         }
@@ -219,6 +222,12 @@
       "accept-all-close": "Accept All & Close",
       "decline-all-close": "Decline All & Close",
       "save-close": "Save & Close"
+    }
+  },
+  "multiverse": {
+    "meta": {
+      "title": "Multiverse | Games United",
+      "description": "We are a Venture Builder which enables startup teams with capital, vision, and strategic direction. Unlike gaming VC’s, a venture builder deals with the day-to-day operations and strategic decisions to grow the new business.s"
     }
   }
 }

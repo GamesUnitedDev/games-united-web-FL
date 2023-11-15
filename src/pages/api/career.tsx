@@ -42,12 +42,13 @@ Resume  : ${resume.name}
     ],
   };
 
-  const userMailData = {
-    from: `Games United <${mailTo}>`,
-    to: email,
-    subject: `Thank you for applying to Games United, ${name}!`,
-    text: `Thank you for applying to Games United, ${name}! We will get back to you as soon as possible.`,
-  };
+  // ! Uncomment this block to send a thank you mail to the user
+  // const userMailData = {
+  //   from: `Games United <${mailTo}>`,
+  //   to: email,
+  //   subject: `Thank you for applying to Games United, ${name}!`,
+  //   text: `Thank you for applying to Games United, ${name}! We will get back to you as soon as possible.`,
+  // };
 
   const { error: mainMailError } = await SMTP.sendMail(mailData)
     .then((data) => {
@@ -57,13 +58,14 @@ Resume  : ${resume.name}
       return error;
     });
 
-  await SMTP.sendMail(userMailData)
-    .then((data) => {
-      return data;
-    })
-    .catch((error) => {
-      return error;
-    });
+  // ! Uncomment this block to send a thank you mail to the user
+  // await SMTP.sendMail(userMailData)
+  //   .then((data) => {
+  //     return data;
+  //   })
+  //   .catch((error) => {
+  //     return error;
+  //   });
 
   if (mainMailError) {
     res.status(500).json({ message: 'Something went wrong' });

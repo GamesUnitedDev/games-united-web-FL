@@ -22,11 +22,16 @@ const HeaderLinks: NavbarLink[] = [
   },
   {
     id: 2,
+    name: 'navbar.multiverse',
+    url: '/multiverse',
+  },
+  {
+    id: 3,
     name: 'navbar.career',
     url: '/career',
   },
   {
-    id: 3,
+    id: 4,
     name: 'navbar.contact',
     url: '/contact',
   },
@@ -101,7 +106,11 @@ function Menu({ isActive }: MobileMenuProps): JSX.Element {
   );
 }
 
-export default function Navbar(): JSX.Element {
+export default function Navbar({
+  withGradient = true,
+}: {
+  withGradient?: boolean;
+}): JSX.Element {
   const Router = useRouter();
 
   const [menuStatus, setMenuStatus] = React.useState<boolean>(false);
@@ -126,7 +135,9 @@ export default function Navbar(): JSX.Element {
 
   return (
     <header className="absolute left-0 top-0 z-[10] flex min-h-[152px] w-full items-start justify-center bg-transparent pt-5 font-theme lg:min-h-[214px]">
-      <div className="absolute left-0 top-0 z-[-1] h-full w-full bg-gradient-to-b from-[#490E95] to-transparent" />
+      {withGradient && (
+        <div className="absolute left-0 top-0 z-[-1] h-full w-full bg-gradient-to-b from-[#490E95] to-transparent" />
+      )}
       <section className="relative flex w-full flex-wrap items-center justify-between gap-5 p-5">
         <Link
           href="/"

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
 
 import BannerImg from '@/public/assets/img/coming-soon-banner.webp';
@@ -19,9 +20,12 @@ function UniverseCSoon() {
         <p className="text-sm font-black text-white lg:text-2xl ">
           {t('home.universecsoon.description')}
         </p>
-        <div className="flex items-center justify-center rounded-[37.5px] border border-white bg-transparent py-3 px-6 text-sm font-black text-white transition-all duration-200 hover:bg-white/10 lg:py-4 lg:px-10 lg:text-xl">
+        <Link
+          href="/multiverse"
+          className="flex items-center justify-center rounded-[37.5px] border border-white bg-transparent py-3 px-6 text-sm font-black text-white transition-all duration-200 hover:bg-white/10 lg:py-4 lg:px-10 lg:text-xl"
+        >
           {t('home.universecsoon.button')}
-        </div>
+        </Link>
       </section>
     </section>
   );

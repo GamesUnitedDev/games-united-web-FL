@@ -31,8 +31,10 @@ export default function Home(): JSX.Element {
             image: MergeParkBanner.src,
             description: 'games.mergepark.gameblock.description',
             url: '/games/merge-park',
-            googleplayUrl: 'https://google.com',
-            appstoreUrl: 'https://google.com',
+            googleplayUrl:
+              'https://play.google.com/store/apps/details?id=com.GamesUnited.Mergedpark&pcampaignid=web_share',
+            appstoreUrl:
+              'https://apps.apple.com/tr/app/merge-park/id6448870187?l=tr',
           }}
         />
         <Milestones />

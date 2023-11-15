@@ -9,16 +9,16 @@ function Description() {
       <section className="flex w-full max-w-xl flex-col items-center justify-start gap-12 px-5 py-10 lg:max-w-theme">
         <section className="flex flex-wrap items-center justify-center gap-4">
           <GameDownloadButton
-            className="flex h-[45px] w-fit max-w-fit items-center justify-center lg:h-[76px]"
             type="appstore"
-            url="https://google.com"
             imgClassName="h-full object-contain object-center"
+            url="https://apps.apple.com/tr/app/merge-park/id6448870187?l=tr"
+            className="flex h-[45px] w-fit max-w-fit items-center justify-center lg:h-[76px]"
           />
           <GameDownloadButton
-            className="flex h-[45px] w-fit max-w-fit items-center justify-center lg:h-[76px]"
             type="googleplay"
-            url="https://google.com"
             imgClassName="h-full object-contain object-center"
+            className="flex h-[45px] w-fit max-w-fit items-center justify-center lg:h-[76px]"
+            url="https://play.google.com/store/apps/details?id=com.GamesUnited.Mergedpark&pcampaignid=web_share"
           />
         </section>
         <iframe

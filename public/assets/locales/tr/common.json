@@ -2,6 +2,7 @@
   "navbar": {
     "about": "Hakkımızda",
     "games": "Oyunlar",
+    "multiverse": "Multiverse",
     "career": "Kariyer",
     "contact": "İletişim"
   },
@@ -9,6 +10,7 @@
     "company": {
       "title": "Kurumsal",
       "games": "Oyunlar",
+      "multiverse": "Multiverse",
       "about": "Hakkımızda",
       "career": "Kariyer",
       "contact": "İletişim"
@@ -66,14 +68,11 @@
           "elements": [
             {
               "title": "Q2 - 2022",
-              "elements": [
-                "Casual Games Self Publishing",
-                "Blockchain & NFT LoB started"
-              ]
+              "elements": ["Casual Games Self Publishing"]
             },
             {
               "title": "Q4 - 2022",
-              "elements": ["Series-A Funding", "Testing of 2 casual games"]
+              "elements": ["First Funding Round", "Testing of 2 casual games"]
             }
           ]
         },
@@ -219,6 +218,12 @@
       "accept-all-close": "Tümünü Kabul Et ve Kapat",
       "decline-all-close": "Tümünü Reddet ve Kapat",
       "save-close": "Kaydet ve Kapat"
+    }
+  },
+  "multiverse": {
+    "meta": {
+      "title": "Multiverse | Games United",
+      "description": "We are a Venture Builder which enables startup teams with capital, vision, and strategic direction. Unlike gaming VC’s, a venture builder deals with the day-to-day operations and strategic decisions to grow the new business.s"
     }
   }
 }

@@ -86,9 +86,6 @@ function Milestones() {
                 <p className="p-with-dot text-xl font-normal">
                   {t('home.milestones.milestones.1.elements.0.elements.0')}
                 </p>
-                <p className="p-with-dot text-xl font-normal">
-                  {t('home.milestones.milestones.1.elements.0.elements.1')}
-                </p>
               </li>
               <li className="flex flex-col items-center justify-start">
                 <h4 className="text-2xl font-black">
@@ -141,6 +138,14 @@ function Milestones() {
                 </p>
                 <p className="p-with-dot text-xl font-normal">
                   {t('home.milestones.milestones.2.elements.1.elements.1')}
+                </p>
+              </li>
+              <li className="flex flex-col items-center justify-start">
+                <h4 className="text-2xl font-black">
+                  {t('home.milestones.milestones.2.elements.2.title')}
+                </h4>
+                <p className="p-with-dot text-xl font-normal">
+                  {t('home.milestones.milestones.2.elements.2.elements.0')}
                 </p>
               </li>
             </ul>
