@@ -14,7 +14,7 @@ function Icon({
       case 'loading':
         return (
           <AiOutlineLoading
-            className={`h-9 w-9 animate-spin rounded-full bg-sky-500/20 p-2 text-sky-500 ${className}`}
+            className={`h-9 w-9 animate-spin rounded-full bg-primary-purple/20 p-2 text-primary-purple ${className}`}
           />
         );
 
@@ -35,7 +35,7 @@ function Icon({
       default:
         return (
           <BsExclamationCircleFill
-            className={`h-9 w-9 rounded-full bg-slate-500/20 p-2 text-slate-400 ${className}`}
+            className={`h-9 w-9 rounded-full bg-primary-purple/20 p-2 text-primary-purple ${className}`}
           />
         );
     }

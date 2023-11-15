@@ -51,17 +51,18 @@ function Loader(): JSX.Element | null {
     (loader.inHTML && (
       <div
         style={{
-          transition: loader.isActive ? 'none' : 'all 0.5s',
+          transition: loader.isActive ? 'background-color 0.5s' : 'all 0.5s',
         }}
         className={`
+        ${Router.pathname?.includes('/multiverse') ? 'bg-black' : 'bg-white'}
             ${loader.isActive ? 'visible opacity-100' : 'invisible opacity-0'}
-            fixed left-0 top-0 !z-[999999] flex h-full w-full items-center justify-center bg-white
+            fixed left-0 top-0 !z-[999999] flex h-full w-full items-center justify-center
             `}
       >
         <img
           alt="Logo"
           src={Logo.src}
-          className="aspect-square w-[100px] animate-pulse object-contain"
+          className="aspect-square w-[100px] object-contain"
         />
       </div>
     )) ||

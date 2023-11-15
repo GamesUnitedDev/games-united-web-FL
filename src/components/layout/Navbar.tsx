@@ -60,12 +60,12 @@ function DesktopNavbarElement({
   return (
     <Link
       className={`
-        relative text-base font-semibold text-white
-        before:absolute before:bottom-[-5px] before:left-1/2 before:h-[2px] before:w-[1px] before:-translate-x-1/2 before:bg-white before:opacity-0 before:transition-all before:duration-300
+        relative m-0 p-0 text-center text-base font-semibold
+        text-white before:absolute before:bottom-[-5px] before:left-1/2 before:h-[2px] before:w-[1px] before:-translate-x-1/2 before:bg-white before:opacity-0 before:transition-all before:duration-300
         ${
           isCurrentRoute
-            ? 'before:!w-[150%] before:!opacity-100'
-            : 'hover:before:w-[150%] hover:before:opacity-100'
+            ? 'before:!w-[130%] before:!opacity-100'
+            : 'hover:before:w-[130%] hover:before:opacity-100'
         }
       `}
       href={url}
@@ -149,8 +149,8 @@ export default function Navbar({
             className="w-full max-w-[76px] object-contain lg:max-w-[132px]"
           />
         </Link>
-        <nav className="hidden w-fit items-center justify-end gap-5 lg:flex">
-          <ul className="flex w-fit items-center justify-end gap-24">
+        <nav className="m-0 hidden w-fit items-center justify-center p-0 lg:flex">
+          <ul className="m-0 flex w-fit items-center justify-center gap-16 p-0">
             {HeaderLinks.map(({ url, name, id }) => (
               <li key={`d-elm-${id}`}>
                 <DesktopNavbarElement url={url} name={name} />
