@@ -22,8 +22,8 @@ function Footer(): JSX.Element {
           </Link>
           <p className="text-center text-sm font-normal text-white lg:text-left lg:text-2xl">
             {t('footer.contact-text')}{' '}
-            <a className="hover:underline" href="mailto:info@gamesunited.co">
-              info@gamesunited.co
+            <a className="hover:underline" href="mailto:hello@gamesunited.co">
+              hello@gamesunited.co
             </a>
           </p>
         </section>
