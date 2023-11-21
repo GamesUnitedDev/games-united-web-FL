@@ -15,15 +15,15 @@ function PrivacyNotice({ pdf }: Props) {
   return (
     <>
       <Meta
-        title={t('legal.privacy-notice.meta.title')}
-        description={t('legal.privacy-notice.meta.description')}
+        title={t('legal.privacy-policy.meta.title')}
+        description={t('legal.privacy-policy.meta.description')}
       />
       <Navbar />
       <main className="flex min-h-screen flex-col items-center justify-start font-theme">
         <section className="flex min-h-[40vh] w-full items-center justify-center bg-primary-purple pt-[200px]">
           <section className="flex w-full max-w-theme items-start justify-start p-5">
             <h1 className="text-left text-2xl font-black text-white lg:text-5xl">
-              {t('legal.privacy-notice.title')}
+              {t('legal.privacy-policy.title')}
             </h1>
           </section>
         </section>
@@ -44,8 +44,8 @@ function PrivacyNotice({ pdf }: Props) {
 
 export async function getServerSideProps({ locale }) {
   const pdfs = {
-    tr: '/assets/legal/privacy-notice-tr.pdf',
-    en: '/assets/legal/privacy-notice-en.pdf',
+    tr: '/assets/legal/privacy-policy-tr.pdf',
+    en: '/assets/legal/privacy-policy-en.pdf',
   };
 
   return {

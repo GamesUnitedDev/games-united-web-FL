@@ -106,9 +106,9 @@ function Footer(): JSX.Element {
         <section className="flex w-full flex-wrap items-center justify-center gap-6 text-center text-xl text-zinc-200">
           <Link
             className="underline transition-all duration-150 hover:text-white"
-            href="/legal/privacy-notice"
+            href="/legal/privacy-policy"
           >
-            {t('footer.legal.privacy-notice')}
+            {t('footer.legal.privacy-policy')}
           </Link>
           <Link
             className="underline transition-all duration-150 hover:text-white"

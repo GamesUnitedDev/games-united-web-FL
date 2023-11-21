@@ -16,7 +16,7 @@ function PrivacyPolicyText() {
       <p className="text-left text-base font-normal text-black lg:text-2xl">
         I have read and accept the{' '}
         <Link
-          href="/legal/privacy-notice"
+          href="/legal/privacy-policy"
           target="_blank"
           rel="noreferrer"
           className="text-primary-purple underline"
@@ -31,7 +31,7 @@ function PrivacyPolicyText() {
   return (
     <p className="text-left text-base font-normal text-black lg:text-2xl">
       <Link
-        href="/tr/legal/privacy-notice"
+        href="/tr/legal/privacy-policy"
         target="_blank"
         rel="noreferrer"
         className="text-primary-purple underline"
