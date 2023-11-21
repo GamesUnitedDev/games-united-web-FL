@@ -23,7 +23,7 @@
     },
     "legal": {
       "rights-reserved": "© 2021 - 2023 Games United Corporation. All rights reserved.",
-      "privacy-notice": "Gizlilik Politikası",
+      "privacy-policy": "Gizlilik Politikası",
       "cookie-policy": "Çerez Politikası"
     },
     "contact-text": "Bizimle ve faaliyetlerimizle ilgili her türlü soru ve sorunuz için lütfen bizimle şuradan iletişime geçin"
@@ -179,19 +179,19 @@
     "something-went-wrong": "Bir şeyler ters gitti. Lütfen daha sonra tekrar deneyin."
   },
   "legal": {
-    "privacy-notice": {
+    "privacy-policy": {
       "meta": {
-        "title": "Privacy Notice | Games United",
+        "title": "Gizlilik Politikası | Games United",
         "description": "We are a Venture Builder which enables startup teams with capital, vision, and strategic direction. Unlike gaming VC’s, a venture builder deals with the day-to-day operations and strategic decisions to grow the new business.s"
       },
-      "title": "Privacy Notice"
+      "title": "Gizlilik Politikası"
     },
     "cookie-policy": {
       "meta": {
-        "title": "Cookie Policy | Games United",
+        "title": "Çerez Politikası | Games United",
         "description": "We are a Venture Builder which enables startup teams with capital, vision, and strategic direction. Unlike gaming VC’s, a venture builder deals with the day-to-day operations and strategic decisions to grow the new business.s"
       },
-      "title": "Cookie Policy"
+      "title": "Çerez Politikası"
     }
   },
   "cookie-popup": {

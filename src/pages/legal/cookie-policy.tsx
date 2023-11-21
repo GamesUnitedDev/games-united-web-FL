@@ -3,7 +3,13 @@ import Meta from '@/components/layout/Meta';
 import { useTranslation } from 'next-i18next';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import { pdfjs, Document, Page } from 'react-pdf';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
+import 'react-pdf/dist/Page/AnnotationLayer.css';
+import 'react-pdf/dist/Page/TextLayer.css';
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 type Props = {
   pdf: string;
@@ -11,6 +17,12 @@ type Props = {
 
 function CookiePolicy({ pdf }: Props) {
   const { t } = useTranslation();
+
+  const [numPages, setNumPages] = React.useState(null);
+
+  const onDocumentLoadSuccess = ({ numPages: pNums }) => {
+    setNumPages(pNums);
+  };
 
   return (
     <>
@@ -27,14 +39,23 @@ function CookiePolicy({ pdf }: Props) {
             </h1>
           </section>
         </section>
-        <article className="custom-prose-vars prose prose-sm prose-neutral w-full max-w-theme p-5 py-10 prose-ol:pl-10 prose-ul:pl-10 prose-li:pl-4">
-          <embed
-            src={pdf}
-            width="100%"
-            height="100%"
-            type="application/pdf"
-            className="h-full min-h-screen w-full bg-white"
-          />
+        <article className="flex w-full flex-col items-center justify-center">
+          <section className="flex w-full max-w-xl flex-col items-center justify-start overflow-hidden">
+            <Document
+              file={pdf}
+              className="PDFDocument w-full"
+              onLoadSuccess={onDocumentLoadSuccess}
+            >
+              {Array.from(new Array(numPages), (el, index) => (
+                <Page
+                  className="PDFPage PDFPageOne w-full"
+                  renderTextLayer={false}
+                  pageNumber={index + 1}
+                  key={`page_${index + 1}`}
+                />
+              ))}
+            </Document>
+          </section>
         </article>
       </main>
       <Footer />

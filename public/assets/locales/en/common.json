@@ -23,7 +23,7 @@
     },
     "legal": {
       "rights-reserved": "© 2021 - 2023 Games United Corporation. All rights reserved.",
-      "privacy-notice": "Privacy Notice",
+      "privacy-policy": "Privacy Policy",
       "cookie-policy": "Cookie Policy"
     },
     "contact-text": "For any inquiries and questions about us and our activities, please contact us at"
@@ -183,12 +183,12 @@
     "something-went-wrong": "Something went wrong. Please try again later."
   },
   "legal": {
-    "privacy-notice": {
+    "privacy-policy": {
       "meta": {
-        "title": "Privacy Notice | Games United",
+        "title": "Privacy Policy | Games United",
         "description": "We are a Venture Builder which enables startup teams with capital, vision, and strategic direction. Unlike gaming VC’s, a venture builder deals with the day-to-day operations and strategic decisions to grow the new business.s"
       },
-      "title": "Privacy Notice"
+      "title": "Privacy Policy"
     },
     "cookie-policy": {
       "meta": {

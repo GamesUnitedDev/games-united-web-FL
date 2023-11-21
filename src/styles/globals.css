@@ -65,3 +65,18 @@
 .custom-prose-vars {
   --tw-prose-bullets: black;
 }
+
+.PDFDocument {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.PDFPageOne {
+  margin-bottom: 25px;
+}
+
+.PDFPage > canvas {
+  max-width: 100%;
+  height: auto !important;
+}
