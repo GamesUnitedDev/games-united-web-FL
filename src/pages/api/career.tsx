@@ -75,6 +75,7 @@ Resume  : ${resume.name}
 }
 
 export const config = {
+  runtime: 'experimental-edge',
   api: {
     responseLimit: false,
   },
