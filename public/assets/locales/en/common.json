@@ -196,6 +196,29 @@
         "description": "We are a Venture Builder which enables startup teams with capital, vision, and strategic direction. Unlike gaming VC’s, a venture builder deals with the day-to-day operations and strategic decisions to grow the new business.s"
       },
       "title": "Cookie Policy"
+    },
+    "mergepark": {
+      "privacy-policy": {
+        "meta": {
+          "title": "Merge Park Privacy Policy | Games United",
+          "description": "Privacy Policy of Merge Park"
+        },
+        "title": "Merge Park Privacy Policy"
+      },
+      "end-user-license-and-service": {
+        "meta": {
+          "title": "Merge Park End User License and Service Agreement | Games United",
+          "description": "End User License and Service Agreement of Merge Park"
+        },
+        "title": "Merge Park End User License and Service Agreement"
+      },
+      "childrens-privacy": {
+        "meta": {
+          "title": "Merge Park Children's Privacy Policy | Games United",
+          "description": "Children's Privacy Policy of Merge Park"
+        },
+        "title": "Merge Park Children's Privacy Policy"
+      }
     }
   },
   "cookie-popup": {

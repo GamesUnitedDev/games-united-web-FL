@@ -73,10 +73,14 @@
 }
 
 .PDFPageOne {
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 }
 
 .PDFPage > canvas {
   max-width: 100%;
   height: auto !important;
+}
+
+.PDFPage a {
+  margin-top: -10px;
 }

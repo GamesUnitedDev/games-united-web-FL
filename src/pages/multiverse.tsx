@@ -26,7 +26,7 @@ export default function Home(): JSX.Element {
           allowFullScreen
           title="Merge Park"
           className="aspect-video w-full p-0 lg:p-10"
-          src="https://www.youtube.com/embed/ZMQO5nMXdpM?si=Kr56kNe9NqHWLSLF&autoplay=1&mute=1"
+          src="https://www.youtube.com/embed/8qDhECK-Sm8?si=HZf3ufSf7f3nJyCc&autoplay=1&mute=1"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         />
       </main>
