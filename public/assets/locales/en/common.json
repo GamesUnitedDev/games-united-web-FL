@@ -219,6 +219,29 @@
         },
         "title": "Merge Park Children's Privacy Policy"
       }
+    },
+    "luckywarrior": {
+      "privacy-policy": {
+        "meta": {
+          "title": "Lucky Warrior Privacy Policy | Games United",
+          "description": "Privacy Policy of Lucky Warrior"
+        },
+        "title": "Lucky Warrior Privacy Policy"
+      },
+      "end-user-license-and-service": {
+        "meta": {
+          "title": "Lucky Warrior End User License and Service Agreement | Games United",
+          "description": "End User License and Service Agreement of Lucky Warrior"
+        },
+        "title": "Lucky Warrior End User License and Service Agreement"
+      },
+      "childrens-privacy": {
+        "meta": {
+          "title": "Lucky Warrior Children's Privacy Policy | Games United",
+          "description": "Children's Privacy Policy of Lucky Warrior"
+        },
+        "title": "Lucky Warrior Children's Privacy Policy"
+      }
     }
   },
   "cookie-popup": {

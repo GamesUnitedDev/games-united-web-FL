@@ -215,6 +215,29 @@
         },
         "title": "Merge Park Çocuk Gizliliği Politikası"
       }
+    },
+    "luckywarrior": {
+      "privacy-policy": {
+        "meta": {
+          "title": "Lucky Warrior Gizlilik Politikası | Games United",
+          "description": "Lucky Warrior Gizlilik Politikası"
+        },
+        "title": "Lucky Warrior Gizlilik Politikası"
+      },
+      "end-user-license-and-service": {
+        "meta": {
+          "title": "Lucky Warrior Son Kullanıcı Lisans Sözleşmesi ve Hizmet Şartları | Games United",
+          "description": "Lucky Warrior Son Kullanıcı Lisans Sözleşmesi ve Hizmet Şartları"
+        },
+        "title": "Lucky Warrior Son Kullanıcı Lisans Sözleşmesi ve Hizmet Şartları"
+      },
+      "childrens-privacy": {
+        "meta": {
+          "title": "Lucky Warrior Çocuk Gizliliği Politikası | Games United",
+          "description": "Lucky Warrior Çocuk Gizliliği Politikası"
+        },
+        "title": "Lucky Warrior Çocuk Gizliliği Politikası"
+      }
     }
   },
   "cookie-popup": {
