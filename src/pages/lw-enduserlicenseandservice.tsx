@@ -17,11 +17,31 @@ type Props = {
 
 function PrivacyNotice({ pdf }: Props) {
   const { t } = useTranslation();
+  const [width, setWidth] = React.useState(590);
   const [numPages, setNumPages] = React.useState(null);
 
   const onDocumentLoadSuccess = ({ numPages: pNums }) => {
     setNumPages(pNums);
   };
+
+  const handlePDFsize = () => {
+    const container = document.querySelector('#pdf-container');
+
+    if (container?.clientWidth) {
+      setWidth(container.clientWidth + 15);
+    }
+  };
+
+  React.useEffect(() => {
+    handlePDFsize();
+    window.addEventListener('resize', () => handlePDFsize());
+    window.addEventListener('load', () => handlePDFsize());
+
+    return () => {
+      window.removeEventListener('resize', () => handlePDFsize());
+      window.removeEventListener('load', () => handlePDFsize());
+    };
+  }, []);
 
   return (
     <>
@@ -41,7 +61,10 @@ function PrivacyNotice({ pdf }: Props) {
           </section>
         </section>
         <article className="flex w-full flex-col items-center justify-center">
-          <section className="flex w-full max-w-xl flex-col items-center justify-start overflow-hidden">
+          <section
+            id="pdf-container"
+            className="flex w-full max-w-xl flex-col items-center justify-start overflow-hidden"
+          >
             <Document
               file={pdf}
               className="PDFDocument w-full"
@@ -49,6 +72,7 @@ function PrivacyNotice({ pdf }: Props) {
             >
               {Array.from(new Array(numPages), (el, index) => (
                 <Page
+                  width={width}
                   className="PDFPage PDFPageOne w-full"
                   renderTextLayer={false}
                   pageNumber={index + 1}

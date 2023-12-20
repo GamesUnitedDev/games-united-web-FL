@@ -13,6 +13,11 @@ const config = {
   i18n,
   reactStrictMode: true,
   basePath: subPathPrefix,
+  webpack: (config) => {
+    config.resolve.alias.canvas = false;
+
+    return config;
+  },
 };
 
 module.exports = withHtml(config);
