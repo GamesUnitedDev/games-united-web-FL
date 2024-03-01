@@ -238,6 +238,29 @@
         },
         "title": "Lucky Warrior Çocuk Gizliliği Politikası"
       }
+    },
+    "defenseofalamos": {
+      "privacy-policy": {
+        "meta": {
+          "title": "Defense of Alamos Gizlilik Politikası | Games United",
+          "description": "Defense of Alamos Gizlilik Politikası"
+        },
+        "title": "Defense of Alamos Gizlilik Politikası"
+      },
+      "end-user-license-and-service": {
+        "meta": {
+          "title": "Defense of Alamos Son Kullanıcı Lisans Sözleşmesi ve Hizmet Şartları | Games United",
+          "description": "Defense of Alamos Son Kullanıcı Lisans Sözleşmesi ve Hizmet Şartları"
+        },
+        "title": "Defense of Alamos Son Kullanıcı Lisans Sözleşmesi ve Hizmet Şartları"
+      },
+      "childrens-privacy": {
+        "meta": {
+          "title": "Defense of Alamos Çocuk Gizliliği Politikası | Games United",
+          "description": "Defense of Alamos Çocuk Gizliliği Politikası"
+        },
+        "title": "Defense of Alamos Çocuk Gizliliği Politikası"
+      }
     }
   },
   "cookie-popup": {
