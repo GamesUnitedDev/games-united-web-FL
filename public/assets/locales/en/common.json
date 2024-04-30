@@ -265,6 +265,29 @@
         },
         "title": "Defense of Alamos Children's Privacy Policy"
       }
+    },
+    "turc": {
+      "privacy-policy": {
+        "meta": {
+          "title": "Turc Privacy Policy | Games United",
+          "description": "Privacy Policy of Turc"
+        },
+        "title": "Turc Privacy Policy"
+      },
+      "end-user-license-and-service": {
+        "meta": {
+          "title": "Turc End User License and Service Agreement | Games United",
+          "description": "End User License and Service Agreement of Turc"
+        },
+        "title": "Turc End User License and Service Agreement"
+      },
+      "childrens-privacy": {
+        "meta": {
+          "title": "Turc Children's Privacy Policy | Games United",
+          "description": "Children's Privacy Policy of Turc"
+        },
+        "title": "Turc Children's Privacy Policy"
+      }
     }
   },
   "cookie-popup": {

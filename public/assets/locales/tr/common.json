@@ -261,6 +261,29 @@
         },
         "title": "Defense of Alamos Çocuk Gizliliği Politikası"
       }
+    },
+    "turc": {
+      "privacy-policy": {
+        "meta": {
+          "title": "Turc Gizlilik Politikası | Games United",
+          "description": "Turc Gizlilik Politikası"
+        },
+        "title": "Turc Gizlilik Politikası"
+      },
+      "end-user-license-and-service": {
+        "meta": {
+          "title": "Turc Son Kullanıcı Lisans Sözleşmesi ve Hizmet Şartları | Games United",
+          "description": "Turc Son Kullanıcı Lisans Sözleşmesi ve Hizmet Şartları"
+        },
+        "title": "Turc Son Kullanıcı Lisans Sözleşmesi ve Hizmet Şartları"
+      },
+      "childrens-privacy": {
+        "meta": {
+          "title": "Turc Çocuk Gizliliği Politikası | Games United",
+          "description": "Turc Çocuk Gizliliği Politikası"
+        },
+        "title": "Turc Çocuk Gizliliği Politikası"
+      }
     }
   },
   "cookie-popup": {
