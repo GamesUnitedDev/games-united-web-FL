@@ -284,6 +284,29 @@
         },
         "title": "Turc Çocuk Gizliliği Politikası"
       }
+    },
+    "tt": {
+      "privacy-policy": {
+        "meta": {
+          "title": "Tower Tactix Gizlilik Politikası | Games United",
+          "description": "Tower Tactix Gizlilik Politikası"
+        },
+        "title": "Tower Tactix Gizlilik Politikası"
+      },
+      "end-user-license-and-service": {
+        "meta": {
+          "title": "Tower Tactix Son Kullanıcı Lisans Sözleşmesi ve Hizmet Şartları | Games United",
+          "description": "Tower Tactix Son Kullanıcı Lisans Sözleşmesi ve Hizmet Şartları"
+        },
+        "title": "Tower Tactix Son Kullanıcı Lisans Sözleşmesi ve Hizmet Şartları"
+      },
+      "childrens-privacy": {
+        "meta": {
+          "title": "Tower Tactix Çocuk Gizliliği Politikası | Games United",
+          "description": "Tower Tactix Çocuk Gizliliği Politikası"
+        },
+        "title": "Tower Tactix Çocuk Gizliliği Politikası"
+      }
     }
   },
   "cookie-popup": {

@@ -288,6 +288,29 @@
         },
         "title": "Turc Children's Privacy Policy"
       }
+    },
+    "tt": {
+      "privacy-policy": {
+        "meta": {
+          "title": "Tower Tactix Privacy Policy | Games United",
+          "description": "Privacy Policy of Tower Tactix"
+        },
+        "title": "Tower Tactix Privacy Policy"
+      },
+      "end-user-license-and-service": {
+        "meta": {
+          "title": "Tower Tactix End User License and Service Agreement | Games United",
+          "description": "End User License and Service Agreement of Tower Tactix"
+        },
+        "title": "Tower Tactix End User License and Service Agreement"
+      },
+      "childrens-privacy": {
+        "meta": {
+          "title": "Tower Tactix Children's Privacy Policy | Games United",
+          "description": "Children's Privacy Policy of Tower Tactix"
+        },
+        "title": "Tower Tactix Children's Privacy Policy"
+      }
     }
   },
   "cookie-popup": {
